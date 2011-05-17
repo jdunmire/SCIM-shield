@@ -9,3 +9,7 @@ All installed on Ubuntu from the repository.
 {{{
 $ sudo apt-get install geda geda-doc geda-examples geda-utils gerbv ngspice ngspic-doc pcb
 }}}
+
+=== References ===
+* [[http://engr.nmsu.edu/~etti/fall96/electronics/induct/induct.html|Measuring Inductance]] by Guillermo Rico at the New Mexico State University.
+* [[http://www.daycounter.com/Articles/How-To-Measure-Inductance.phtml|How to Measure Inductance]] from [[http://www.daycounter.com/|Daycounter, Inc]] Engineering Services.
