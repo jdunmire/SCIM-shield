@@ -13,3 +13,8 @@ Mon 16 May 2011 07:44:09 PM PDT
   Clone a local copy:
     hg clone ssh://jerry@raven//srv/hg/lcMeter
 
+
+Tue 17 May 2011 03:44:17 PM PDT
+    - Start the wiki by running 'hatta.py'
+    - Wiki will be at http://localhost:8080/
+    - The hatta.conf file is set to constrain access to localhost.
