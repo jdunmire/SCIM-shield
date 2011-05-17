@@ -1,0 +1,8 @@
+== Tools ==
+
+=== gEDA ===
+* gschem  - schematic editor
+* pcb     - pcb layout
+* ngspice - circuit simulation
+
+All installed on Ubuntu from the repository.
