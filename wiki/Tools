@@ -6,3 +6,6 @@
 * ngspice - circuit simulation
 
 All installed on Ubuntu from the repository.
+{{{
+$ sudo apt-get install geda geda-doc geda-examples geda-utils gerbv ngspice ngspic-doc pcb
+}}}
