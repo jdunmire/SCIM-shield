@@ -1,0 +1,15 @@
+Mon 16 May 2011 07:44:09 PM PDT
+  New project: Design and build a Arduino based LC Meter
+    - use gEDA tools
+    - use mercurial for the DRCS
+    - use Hatta for the wiki
+  
+  Install Hatta:
+    - INSTALL: mercurial python-werkzeug python-pygments
+    - Downloaded hatta.py from the website (http://hatta-wiki.org). Put
+      it in my ~/bin directory.
+
+  Create initial repository in the /srv directory on raven.
+  Clone a local copy:
+    hg clone ssh://jerry@raven//srv/hg/lcMeter
+
