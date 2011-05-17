@@ -1,4 +1,3 @@
-= LC Meter =
 An Arduino shield for measuring inductance, capacitance, and frequency. The initial plans do not include a display, the measured value will be reported over a serial link.
 
 The concept is based on the [[http://www.kerrywong.com/2010/10/16/avr-lc-meter-with-frequency-measurement/|AVR LC Meter]] by [[http://www.kerrywong.com/about/|Kerry Wong]]. My contributions will be:
