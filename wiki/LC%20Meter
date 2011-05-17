@@ -6,6 +6,9 @@ The concept is based on the [[http://www.kerrywong.com/2010/10/16/avr-lc-meter-w
 * Modify the code for serial output only.
 * Add documentation to the code with explanations I find helpful.
 * Simulate the circuit with {{{ngspice}}}
+* Put it all together in a [[http://mercurial.selenic.com/|Mercurial]] [[http://en.wikipedia.org/wiki/Distributed_revision_control|DRCS]] with an eye towards hosting it at [[http://code.google.com/hosting/|Google Code]]
+
+A sub-goal is that I want to be able to do the work on multiple computers, both on and off-line, so that I can take advantage of my //spare time//.
 
 === Short Index ===
 * [[Component Vendors]]
