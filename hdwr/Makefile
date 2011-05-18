@@ -18,7 +18,7 @@ lc_osc.mod: spicecmds models/LM339.5_1 models/LM393.5_1
 %.raw: %.mod
 	ngspice -b $< -r $@ -o messages.log
 	#
-	# view with gwave ls_osc.raw
+	# view with gwave lc_osc.raw
 
 clean:
 	$(RM) *.log *.raw *.sch~

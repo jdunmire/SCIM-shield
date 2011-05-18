@@ -171,3 +171,4 @@ file=./models/LM339.5_1
 T 43000 48200 5 10 1 1 0 0 1
 model-name=LM339
 }
+C 40200 40200 1 0 0 copyright-1.sym

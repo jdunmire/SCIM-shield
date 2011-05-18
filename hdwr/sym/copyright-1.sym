@@ -1,0 +1,18 @@
+v 20100214 2
+T 0 0 9 10 1 0 0 0 4
+Copyright 2011 Jerry Dunmire (jerry@dunmire.org)
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+T 104 2174 8 10 0 0 0 0 1
+device=none
+T 104 1974 8 10 0 0 0 0 1
+graphical=1
+T 104 1774 8 10 0 0 0 0 1
+description=Copyright and License
+T 104 1574 8 10 0 0 0 0 1
+footprint=none
+T 104 1374 8 10 0 0 0 0 1
+refdes=none
+T 104 1174 8 10 0 0 0 0 1
+numslots=0

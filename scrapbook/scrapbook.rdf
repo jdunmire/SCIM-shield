@@ -55,6 +55,22 @@
                    NS1:comment=""
                    NS1:icon=""
                    NS1:source="http://hatta-wiki.org/Usage" />
+  <RDF:Description RDF:about="urn:scrapbook:item20110518152915"
+                   NS1:id="20110518152915"
+                   NS1:type=""
+                   NS1:title="gschem symbol creation"
+                   NS1:chars="UTF-8"
+                   NS1:comment=""
+                   NS1:source="http://geda.seul.org/wiki/geda:gschem_symbol_creation"
+                   NS1:icon="resource://scrapbook/data/20110518152915/favicon.ico" />
+  <RDF:Description RDF:about="urn:scrapbook:item20110518135006"
+                   NS1:id="20110518135006"
+                   NS1:type="bookmark"
+                   NS1:title="From_PSpice_to_ngspice-gEDA - Ubuntu Wiki"
+                   NS1:chars=""
+                   NS1:comment=""
+                   NS1:icon=""
+                   NS1:source="https://wiki.edubuntu.org/From_PSpice_to_ngspice-gEDA" />
   <RDF:Description RDF:about="urn:scrapbook:item20110516195356"
                    NS1:id="20110516195356"
                    NS1:type="bookmark"
@@ -71,6 +87,14 @@
                    NS1:comment=""
                    NS1:icon=""
                    NS1:source="http://hatta-wiki.org/Customization" />
+  <RDF:Description RDF:about="urn:scrapbook:item20110518153500"
+                   NS1:id="20110518153500"
+                   NS1:type="bookmark"
+                   NS1:title="gEDA Attributes"
+                   NS1:chars=""
+                   NS1:icon=""
+                   NS1:source="file:///usr/share/doc/geda/wiki/geda-master_attributes_list.html"
+                   NS1:comment="" />
   <RDF:Description RDF:about="urn:scrapbook:item20110513212016"
                    NS1:id="20110513212016"
                    NS1:type="bookmark"
@@ -144,6 +168,8 @@
     <RDF:li RDF:resource="urn:scrapbook:item20110514164424"/>
     <RDF:li RDF:resource="urn:scrapbook:item20110514160147"/>
     <RDF:li RDF:resource="urn:scrapbook:item20110516195113"/>
+    <RDF:li RDF:resource="urn:scrapbook:item20110518135006"/>
+    <RDF:li RDF:resource="urn:scrapbook:item20110518152915"/>
   </RDF:Seq>
   <RDF:Description RDF:about="urn:scrapbook:item20110516222528"
                    NS1:id="20110516222528"
@@ -213,6 +239,7 @@
     <RDF:li RDF:resource="urn:scrapbook:item20110518100557"/>
     <RDF:li RDF:resource="urn:scrapbook:item20110518100807"/>
     <RDF:li RDF:resource="urn:scrapbook:item20110518100955"/>
+    <RDF:li RDF:resource="urn:scrapbook:item20110518153500"/>
   </RDF:Seq>
   <RDF:Description RDF:about="urn:scrapbook:item20110518100336"
                    NS1:id="20110518100336"
