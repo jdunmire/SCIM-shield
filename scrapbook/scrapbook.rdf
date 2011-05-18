@@ -29,6 +29,7 @@
   <RDF:Seq RDF:about="urn:scrapbook:item20110516222526">
     <RDF:li RDF:resource="urn:scrapbook:item20110516195933"/>
     <RDF:li RDF:resource="urn:scrapbook:item20110516200001"/>
+    <RDF:li RDF:resource="urn:scrapbook:item20110518115207"/>
   </RDF:Seq>
   <RDF:Description RDF:about="urn:scrapbook:item20110516222526"
                    NS1:id="20110516222526"
@@ -160,6 +161,14 @@
                    NS1:comment=""
                    NS1:icon="http://ashwith.wordpress.com/favicon.ico"
                    NS1:source="http://ashwith.wordpress.com/2010/09/23/creating-your-own-symbols-in-gschem/" />
+  <RDF:Description RDF:about="urn:scrapbook:item20110518115207"
+                   NS1:id="20110518115207"
+                   NS1:type="bookmark"
+                   NS1:title="Ygdrasil :: tkdiff for Mercurial"
+                   NS1:chars=""
+                   NS1:comment=""
+                   NS1:icon="http://orchistro.tistory.com/favicon.ico"
+                   NS1:source="http://orchistro.tistory.com/220" />
   <RDF:Description RDF:about="urn:scrapbook:item20110513215721"
                    NS1:id="20110513215721"
                    NS1:type="bookmark"
