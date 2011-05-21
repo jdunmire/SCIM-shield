@@ -21,5 +21,11 @@ lc_osc.mod: spicecmds models/LM339.5_1 models/LM393.5_1
 	# view with gwave lc_osc.raw
 
 clean:
-	$(RM) *.log *.raw *.sch~
+	$(RM) *.log *.raw
 	$(RM) *.mod
+
+distclean: clean
+	$(RM) *~
+	$(RM) sym/*~
+	$(RM) \#*\#
+	$(RM) sym/\#*\#
