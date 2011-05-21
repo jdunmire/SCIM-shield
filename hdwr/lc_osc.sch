@@ -4,10 +4,10 @@ C 46500 45900 1 0 0 lm393-1.sym
 {
 T 46725 47950 5 8 0 0 0 0 1
 device=LM393
-T 46700 46800 5 10 1 1 0 0 1
-refdes=U1
-T 46500 45900 5 10 1 0 0 0 1
-value=LM339
+T 46600 46800 5 10 1 1 0 0 1
+refdes=U1a
+T 46500 45900 5 10 0 0 0 0 1
+value=LM393
 }
 C 45500 46300 1 0 1 capacitor-2.sym
 {
@@ -167,8 +167,8 @@ device=model
 T 41900 48500 5 10 1 1 0 0 1
 refdes=A3
 T 42400 48000 5 10 1 1 0 0 1
-file=./models/LM339.5_1
+file=./models/LM393.5_1
 T 43000 48200 5 10 1 1 0 0 1
-model-name=LM339
+model-name=LM393
 }
 C 40200 40200 1 0 0 copyright-1.sym
