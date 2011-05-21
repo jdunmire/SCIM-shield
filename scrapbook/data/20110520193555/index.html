@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- MHonArc v2.4.4 -->
+<!--X-Subject: gEDA&#45;user: Hierarchical Design -->
+<!--X-From-R13: Rvr.YnvfrefNg&#45;bayvar.qr (Tnzvyvr Ynvfre) -->
+<!--X-Date: Tue, 27 Jan 2004 14:56:24 &#45;0500 (EST) -->
+<!--X-Message-Id: 200401272056.43334.die.kaisers@t&#45;online.de -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+
+
+
+<title>gEDA-user: Hierarchical Design</title>
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00003.html">Date Prev</a>][<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00005.html">Date Next</a>][<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00003.html">Thread Prev</a>][<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00012.html">Thread Next</a>][<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/maillist.html#00004">Date Index</a>][<a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/threads.html#00004">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>gEDA-user: Hierarchical Design</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: <a href="mailto:geda-user@DOMAIN.HIDDEN">geda-user-atMUNGEDseul_dot_org</a></li>
+<li><em>Subject</em>: gEDA-user: Hierarchical Design</li>
+<li><em>From</em>: <a href="mailto:Die.Kaisers@DOMAIN.HIDDEN">Die_dot_Kaisers-atMUNGEDt-online_dot_de</a> (Familie Kaiser)</li>
+<li><em>Date</em>: Tue, 27 Jan 2004 20:56:43 +0100</li>
+<li><em>Delivery-Date</em>: Tue, 27 Jan 2004 14:56:24 -0500</li>
+<li><em>Reply-To</em>: <a href="mailto:geda-user@DOMAIN.HIDDEN">geda-user-atMUNGEDseul_dot_org</a></li>
+<li><em>Sender</em>: <a href="mailto:owner-geda-user@DOMAIN.HIDDEN">owner-geda-user-atMUNGEDseul_dot_org</a></li>
+<li><em>User-Agent</em>: KMail/1.4.3</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>
+Hi,
+
+I am just creating my first hierarchical design with gschem. Unfortunately I 
+found not match documentation about that.
+
+With the examples I figured out the following way. My question to the 
+developer of this fabulous program is, whether this is the official way:
+
+
+
+
+1. Upper level
+
+Create a symbol somewhere along the "component-library" search path, defined 
+in gschemrc. The name of the symbol should be the same as the name of the 
+lower level schematic, but with the extension "*.sym":
+
+&lt;lower_level_schematic_name.sym&gt;
+
+
+Place the following attributes on the symbol:
+
+source=&lt;lower_level_schematic_name.sch&gt;, visible or invisible
+refdes=X?, visible
+
+Attach the the following attributes to each pin of the symbol:
+
+pinlable=&lt;signal_name&gt;, visible
+pinnumber=1, 2, IN, Out, ...;  comment only
+pinseq=1, 2. ...; invisible, comment only
+
+
+Place the symbol in the upper level schematic.
+
+
+
+
+2. Lower level
+
+Create a new schematic called &lt;lower_level_schematic_name.sch&gt;. This must be 
+in the somewhere in the "source-library" search path defined in gschemrc. 
+Example definition:
+
+(source-library ".")
+
+
+Use the symbol "in-1" or "out-1" form the library "IO", connect it to a net.
+Change the value of the refdes attribute to &lt;signal_name&gt;. The signal name 
+must be the same as the pinlable propertys on the previous crated symbol.
+
+
+Alternatively you can create your own symbol. The symbol needs one pin with 
+the following attributes:
+
+refdes=&lt;signal_name&gt;; visible
+
+optional:
+device=input, output, ...; invisible.
+
+pin attributes:
+pinnumber=1; invisible
+pinseq=1; invisible
+
+
+
+
+3. Netlist extraction
+
+make sure that you use the same search path in gnetlistrc than in gschemrc. 
+Then use gnetlist in your usual way. To get more information about what 
+gnetlist is doing use the "-v" option.
+
+
+
+-- 
+
+----------------------------------------
+die.kaisers@t-online.de
+                                            oder
+dh0may@darc.de
+                                            oder
+<a href="http://www.darc.de/c/12">http://www.darc.de/c/12</a>
+---------------------------------------
+</pre>
+
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00003.html">gEDA-user: gschem 20040111, text on screen problem</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00005.html">gEDA-user: gschem prints for wordprocessing, how?</a></strong>
+</li>
+<li>Prev by thread:
+<strong><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00003.html">gEDA-user: gschem 20040111, text on screen problem</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/msg00012.html">Re: gEDA-user: Hierarchical Design</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/maillist.html#00004"><strong>Date</strong></a></li>
+<li><a href="http://ftp.sunet.se/geda/mailinglist/geda-user14/threads.html#00004"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

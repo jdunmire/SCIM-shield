@@ -5,3 +5,4 @@ syntax: glob
 *.raw   # ngspice binary output
 *.mod   # ngspice model netlists
 scrapbook/backup/*
+*\#*\#  # gschem backup files
