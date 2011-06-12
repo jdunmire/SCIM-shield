@@ -1,0 +1,75 @@
+elements directory for pcb must have sub directory and footprints
+(elements) go in the sub directories.
+
+PCB layouts are not PCB 'elements' (footprints), though PCB can be used
+to create and new element.
+
+The shield_outline.pcb seems to be intended as the starting point for a
+layout PCB file and not a footprint.
+
+The 'problem' I have is that the shield_outline.sch file does not have
+names associated with the connectors and the pins on the connectors.
+
+Perhaps I should create individual schematic components for each
+connector and then the footprint stays the same as specified in the
+existing shield_outline.sch.
+
+I also wonder if the reference designators can be 'fixed', perhaps by
+using names like Power, IO_H, IO_L, and AIO instead of J1-4
+  - need to see what happens when the program to number devices is run.
+
+Setting the newlib path for pcb:
+  - library-newlib = ...:...:...
+       works in ~/.pcb/preferences and adds to the default list
+       does not work in ./pcb.settings
+
+  - lib-newlib = ...:...:...
+       works in pcb.settings, but overrides the default list.
+       So to get the defaults you must include
+       "/usr/share/pcb/newlib:/usr/share/pcb/pcblib-newlib
+
+  NOTE: the directories listed in library-newlib and/or lib-newlib will
+        not appear in the library until they have a subdirectory. Only
+        elements in the subdirectories will be listed in the library
+
+
+Fri 10 Jun 2011 09:10:53 PM PDT
+    - Reference designators can be specified in the symbol
+    - Reference designators without a number will get numbered when
+      refdes_renum is run. So IOH becomes IOH1
+    - I've created separate symbols for each of the four connectors on
+      the UNO layout with reference designators already assigned.
+    - If the schematics do not include all four connectors then when gsch2pcb
+      is run it will delete connectors from the .pcb file that are not
+      found on the schematics!
+
+    The shield_outline.pcb includes a netlist section, but I don't think
+    it is needed.
+
+    TODO list:
+      - fix reference designator names for the UNO connectors in the
+          symbol files. Use J1-4 and not IOH, IOL, etc. - DONE
+      - delete netlist from shield_outline.pcb
+      - add missing hole to the shield
+      - set a version number on the shield
+      - set a copyright/license notice on the shield
+      - set a rocking-d symbol on the shield as my 'brand'
+      - reconsider names for the shield connect symbol file names.
+
+    Instructions for using shield_outline.pcb
+      - create schematic with all four symbols for the connectors
+      - copy templates/shield_outline.pcb to the new board name
+      - setup .prj file (make new-board-name.prj and then edit to add
+          the full list of schematics.
+      - run gsch2pcb and follow instructions
+
+      - general instructions on how to setup .prj:
+          - specifiy output-name
+          - specify elements-dir
+          - list all the schematics on the 'schematics' line.
+
+          There is a pattern rule in the Makefile (%.prj:) that will
+          create an initial .prj file. After running 'make
+          new-board.prj' don't forget to edit the new-board.prj file and
+          add additional schematics as needed.
+

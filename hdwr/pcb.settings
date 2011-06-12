@@ -1,0 +1,14 @@
+# pcb.settings - config file for pcb
+#
+# This is the only way I could find include libraries in the pkgs/
+# directory on a per-project basis. However, using lib-newlib has the
+# unwelcome side effect of replacing the whole path. Therefore the
+# system library paths must also be specified, thereby reducing the
+# portabiltiy of the project.
+#
+# Note: packages must be placed in sub-directories of the those listed
+# in the path, otherwise they are not found. That means that pkgs/Power_Jack
+# would not appear in the pcb library dialog, but
+# pkgs/connectors/Power_Jack would.
+#
+lib-newlib = pkgs:/usr/share/pcb/newlib:/usr/share/pcb/pcblib-newlib
