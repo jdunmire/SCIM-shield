@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Sun Jun 12 13:34:42 2011
+# date:    Sun Jun 12 19:45:21 2011
 # user:    jerry (Jerry Dunmire,,,)
 # host:    jerry-laptop
 
@@ -865,6 +865,13 @@ Element["lock" "Description_PAD125" "" "PAD125" 60000 10000 0 0 4 100 ""]
 
 	)
 
+Element["lock" "Description_PAD125" "" "PAD125" 55000 200000 0 0 4 100 "selected"]
+(
+	Attribute("description" "Single 125mil hole")
+	Pin[0 0 14500 3000 15100 12500 "1" "1" "lock"]
+
+	)
+
 Element["lock" "Description_PAD125" "" "PAD125" 260000 70000 0 0 4 100 ""]
 (
 	Attribute("description" "Single 125mil hole")
@@ -916,9 +923,9 @@ Layer(3 "outline")
 Layer(4 "unused")
 (
 )
-Layer(5 "unused")
+Layer(5 "silkscreen")
 (
-	Text[10000 196000 0 119 "ShieldOutline v.0" ""]
+	Text[6000 202000 1 119 "ShieldOutline v1.0" ""]
 	Text[91000 30000 1 100 "AREF" ""]
 	Text[151000 23000 1 100 "D9" ""]
 	Text[111000 26000 1 100 "D13" ""]
