@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Sun Jun 12 19:45:21 2011
+# date:    Sun Jun 12 20:11:44 2011
 # user:    jerry (Jerry Dunmire,,,)
 # host:    jerry-laptop
 
@@ -920,10 +920,10 @@ Layer(3 "outline")
 	Line[0 0 0 210000 1000 2000 ""]
 	Line[270000 210000 270000 0 1000 2000 ""]
 )
-Layer(4 "unused")
+Layer(4 "solder-side silk")
 (
 )
-Layer(5 "silkscreen")
+Layer(5 "component-side silk")
 (
 	Text[6000 202000 1 119 "ShieldOutline v1.0" ""]
 	Text[91000 30000 1 100 "AREF" ""]
