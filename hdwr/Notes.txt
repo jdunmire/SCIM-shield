@@ -49,15 +49,17 @@ Fri 10 Jun 2011 09:10:53 PM PDT
     TODO list:
       - fix reference designator names for the UNO connectors in the
           symbol files. Use J1-4 and not IOH, IOL, etc. - DONE
-      - delete netlist from shield_outline.pcb
-      - add missing hole to the shield
-      - set a version number on the shield
-      - set a copyright/license notice on the shield
+      - delete netlist from shield_outline.pcb - DONE
+      - add missing hole to the shield - DONE
+      - set a version number on the shield - DONE
+      - set a copyright/license notice on the shield - DONE
       - set a rocking-d symbol on the shield as my 'brand'
-      - reconsider names for the shield connect symbol file names.
+      - reconsider names for the shield connect symbol file names. -
+        DONE
 
     Instructions for using shield_outline.pcb
       - create schematic with all four symbols for the connectors
+      - run refdes_renum (or set ref designators by hand)
       - copy templates/shield_outline.pcb to the new board name
       - setup .prj file (make new-board-name.prj and then edit to add
           the full list of schematics.
