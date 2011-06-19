@@ -2,3 +2,6 @@ Design Ideas
  - use a 3 pole, triple throw, slide switch to select 'L', 'C', or 'Freq'
  - BNC for Freq input
  - two pin header for test point.
+
+LCD display
+ - Display is 3.3v, but Aurduino CPU is 5v. Level shifters will be required for the SPI interface.
