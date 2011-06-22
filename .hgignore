@@ -6,3 +6,4 @@ syntax: glob
 *.mod   # ngspice model netlists
 scrapbook/backup/*
 *\#*\#  # gschem backup files
+*.backup # created by pcb

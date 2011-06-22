@@ -50,3 +50,4 @@ distclean: clean
 	$(RM) sym/*~
 	$(RM) \#*\#
 	$(RM) sym/\#*\#
+	$(RM) *.backup
