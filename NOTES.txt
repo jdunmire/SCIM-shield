@@ -19,3 +19,13 @@ Tue 17 May 2011 03:44:17 PM PDT
     - Wiki will be at http://localhost:8080/
     - The hatta.conf file is set to constrain access to localhost.
 
+
+Sun 26 Jun 2011 02:12:41 PM PDT
+    TODO:
+      - finish UI schematic
+      - add power connections to schematics
+      - footprints for:
+         - LCD
+         - Terminals
+         - BNC
+         - Switches

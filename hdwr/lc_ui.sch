@@ -1,14 +1,5 @@
 v 20100214 2
 C 40000 40000 0 0 0 title-B.sym
-C 47700 46300 1 0 0 unoJ3-1.sym
-{
-T 49200 46900 5 10 0 0 0 0 1
-device=CONNECTOR_8
-T 47800 48900 5 10 1 1 0 0 1
-refdes=J3
-T 49152 46700 5 10 0 0 0 0 1
-footprint=JUMPER8
-}
 C 44400 49300 1 0 0 switch-pushbutton-no-1.sym
 {
 T 44800 49600 5 10 1 1 0 0 1
@@ -16,15 +7,38 @@ refdes=S?
 T 44800 49900 5 10 0 0 0 0 1
 device=SWITCH_PUSHBUTTON_NO
 }
-C 50600 43300 1 0 0 LCD-1.sym
-{
-T 51600 48875 5 10 0 0 0 0 1
-device=LCD
-}
 C 40200 40200 1 0 0 copyright-1.sym
 {
 T 40304 42374 5 10 0 0 0 0 1
 device=none
 T 40304 41774 5 10 0 0 0 0 1
 footprint=none
+}
+T 50000 40900 9 20 1 0 0 0 1
+Arduino Shield: L/C/F Meter
+T 53900 40100 9 10 1 0 0 0 1
+J. Dunmire
+T 51800 40200 9 14 1 0 0 0 1
+4
+T 50600 40200 9 14 1 0 0 0 1
+4
+C 49800 44900 1 0 0 NHD_C0216CiZ-1.sym
+{
+T 52600 48975 5 10 0 0 0 0 1
+device=NHD-C0216CiZ
+T 52600 49400 5 10 0 0 0 0 1
+footprint=NHD_C0216CiZ
+T 50200 48900 5 10 1 1 0 0 1
+refdes=U?
+}
+C 51400 49400 1 0 0 3.3V-plus-1.sym
+C 54700 48500 1 0 0 gnd-1.sym
+C 46100 43200 1 0 0 PCA9507-1.sym
+{
+T 48495 45195 5 10 0 0 0 0 1
+device=PCA9507
+T 47095 45095 5 10 1 1 0 0 1
+refdes=U?
+T 48495 45631 5 10 0 0 0 0 1
+footprint=SO8
 }
