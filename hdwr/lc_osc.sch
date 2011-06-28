@@ -33,8 +33,8 @@ T 45100 45000 5 10 0 0 90 0 1
 device=CAPACITOR
 T 45300 45500 5 10 1 1 180 0 1
 refdes=C3
-T 45000 45000 5 10 1 1 0 0 1
-value=1000p
+T 44700 45000 5 10 1 1 0 0 1
+value=1000p 1%
 }
 C 44200 46000 1 0 0 inductor-1.sym
 {
@@ -43,7 +43,7 @@ device=INDUCTOR
 T 44400 46300 5 10 1 1 0 0 1
 refdes=L1
 T 44400 45800 5 10 1 1 0 0 1
-value=221uf
+value=220uf 5%
 }
 C 48800 47400 1 0 0 resistor-1.sym
 {

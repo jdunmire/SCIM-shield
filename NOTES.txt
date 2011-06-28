@@ -22,10 +22,25 @@ Tue 17 May 2011 03:44:17 PM PDT
 
 Sun 26 Jun 2011 02:12:41 PM PDT
     TODO:
-      - finish UI schematic
-      - add power connections to schematics
+      - finish UI schematic - DONE
+      - add power connections to schematics - DONE
       - footprints for:
          - LCD
          - Terminals
          - BNC
          - Switches
+
+
+Sun 26 Jun 2011 05:13:12 PM PDT
+    - DONE: Rework Uno connector symbols- confusing pin label/number positions
+      when symbol is inverted/rotated
+
+Sun 26 Jun 2011 09:59:22 PM PDT
+    - DONE: Calculate pull-up resistors for level shifter per 2.3.5 of
+      AN10418.
+
+        10K will work for bus capacitance up to 200pF, even with 3.3v
+        levels.
+
+Mon 27 Jun 2011 09:51:57 PM PDT
+    - Schematics are complete. Committing.
