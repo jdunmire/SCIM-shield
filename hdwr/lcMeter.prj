@@ -1,0 +1,4 @@
+# gsch2pcb control file for lcMeter
+elements-dir pkgs
+output-name lcMeter
+schematics lcMeter_top.sch lc_osc.sch lc_ui.sch freq_buf.sch
