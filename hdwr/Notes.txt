@@ -75,3 +75,9 @@ Fri 10 Jun 2011 09:10:53 PM PDT
           new-board.prj' don't forget to edit the new-board.prj file and
           add additional schematics as needed.
 
+
+Tue 28 Jun 2011 11:28:17 PM PDT
+    - After running refdes_renum on all the schematics, the reference
+      designators for the I/O pins in the sub-circuits were assigned
+      numbers. This then caused an error when the DRC was run.
+

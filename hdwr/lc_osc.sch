@@ -121,21 +121,21 @@ C 43000 46000 1 0 0 in-1.sym
 T 43000 46300 5 10 0 0 0 0 1
 device=INPUT
 T 43000 46300 5 10 1 1 0 0 1
-refdes=Lx1
+refdes=Lx
 }
 C 43000 44400 1 0 0 in-1.sym
 {
 T 43000 44700 5 10 0 0 0 0 1
 device=INPUT
 T 43000 44700 5 10 1 1 0 0 1
-refdes=Cx1
+refdes=Cx
 }
 C 51600 45800 1 0 0 out-1.sym
 {
 T 51600 46100 5 10 0 0 0 0 1
 device=OUTPUT
 T 51600 46100 5 10 1 1 0 0 1
-refdes=Fout2
+refdes=Fout
 }
 N 43600 44500 45600 44500 4
 N 45600 44500 45600 44800 4

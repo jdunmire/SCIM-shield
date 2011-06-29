@@ -63,14 +63,14 @@ C 46200 45800 1 0 0 in-1.sym
 T 46200 46100 5 10 0 0 0 0 1
 device=INPUT
 T 46200 46100 5 10 1 1 0 0 1
-refdes=Fin1
+refdes=Fin
 }
 C 50400 46000 1 0 0 out-1.sym
 {
 T 50400 46300 5 10 0 0 0 0 1
 device=OUTPUT
 T 50700 46300 5 10 1 1 0 0 1
-refdes=Fout1
+refdes=Fout
 }
 T 50100 40900 9 20 1 0 0 0 1
 Arduino Shield: L/C/F Meter
