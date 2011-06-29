@@ -6,6 +6,15 @@
 # *.pcb - pcb file
 #
 #
+PROJNAME=lcMeter
+TOPSCHEM=$(PROJNAME)_top.sch
+OTHERSCHEM=lc_ui.sch lc_osc.sch freq_buf.sch
+
+check: $(PROJNAME).drc
+
+$(PROJNAME).drc: $(TOPSCHEM) $(OTHERSCHEM)
+	gnetlist -g drc2 -o $@ $<
+
 all: simulate
 
 simulate: lc_osc.raw
