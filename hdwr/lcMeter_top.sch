@@ -7,7 +7,7 @@ C 7000 5100 1 0 0 resistor-1.sym
 T 7300 5500 5 10 0 0 0 0 1
 device=RESISTOR
 T 7200 5400 5 10 1 1 0 0 1
-refdes=R?
+refdes=R6
 T 7200 4900 5 10 1 1 0 0 1
 value=1k
 }
@@ -16,14 +16,14 @@ C 8600 5400 1 90 0 diode-1.sym
 T 8000 5800 5 10 0 0 90 0 1
 device=DIODE
 T 8100 5900 5 10 1 1 180 0 1
-refdes=D?
+refdes=D1
 }
 C 8600 4000 1 90 0 diode-1.sym
 {
 T 8000 4400 5 10 0 0 90 0 1
 device=DIODE
 T 8000 4400 5 10 1 1 180 0 1
-refdes=D?
+refdes=D2
 }
 N 8400 5400 8400 4900 4
 N 7900 5200 8400 5200 4
@@ -32,7 +32,7 @@ C 10500 7600 1 180 0 switch-spdt-1.sym
 T 10100 6800 5 10 0 0 180 0 1
 device=SPDT
 T 10100 7000 5 10 1 1 180 0 1
-refdes=S?
+refdes=S1
 }
 N 9600 7200 9200 7200 4
 N 9200 7200 9200 5200 4
@@ -64,7 +64,7 @@ device=terminal
 T 1910 7300 5 10 0 0 0 0 1
 footprint=CONNECTOR 1 1
 T 1850 6750 5 10 1 1 0 6 1
-refdes=T?
+refdes=T1
 }
 C 1600 7500 1 0 0 terminal-1.sym
 {
@@ -73,7 +73,7 @@ device=terminal
 T 1910 8100 5 10 0 0 0 0 1
 footprint=CONNECTOR 1 1
 T 1850 7550 5 10 1 1 0 6 1
-refdes=T?
+refdes=T2
 }
 N 7100 4000 8400 4000 4
 N 5700 4700 7100 4700 4
@@ -85,7 +85,7 @@ C 3400 6600 1 0 0 switch-dpdt-2.sym
 T 3810 8250 5 10 0 0 0 0 1
 device=Dual_Two_Way_Switch
 T 3810 8000 5 10 1 1 0 0 1
-refdes=S?
+refdes=S2
 T 3810 8500 5 10 0 0 0 0 1
 footprint=SWITCH2
 }
@@ -108,7 +108,7 @@ C 5600 4700 1 0 0 BNC-1.sym
 T 5950 5350 5 10 0 0 0 0 1
 device=BNC
 T 5600 5500 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=CONN1
 }
 C 11200 9000 1 0 0 lc_ui.sym
 {

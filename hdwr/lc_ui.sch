@@ -3,7 +3,7 @@ C 40000 40000 0 0 0 title-B.sym
 C 47400 43600 1 0 0 switch-pushbutton-no-1.sym
 {
 T 47800 43900 5 10 1 1 0 0 1
-refdes=S?
+refdes=S3
 T 47800 44200 5 10 0 0 0 0 1
 device=SWITCH_PUSHBUTTON_NO
 }
@@ -29,7 +29,7 @@ device=NHD-C0216CiZ
 T 52600 49400 5 10 0 0 0 0 1
 footprint=NHD_C0216CiZ
 T 50200 48900 5 10 1 1 0 0 1
-refdes=U?
+refdes=U2
 }
 C 51400 49800 1 0 0 3.3V-plus-1.sym
 C 42800 46600 1 0 0 PCA9507-1.sym
@@ -37,7 +37,7 @@ C 42800 46600 1 0 0 PCA9507-1.sym
 T 45195 48595 5 10 0 0 0 0 1
 device=PCA9507
 T 43795 48495 5 10 1 1 0 0 1
-refdes=U?
+refdes=U3
 T 45195 49031 5 10 0 0 0 0 1
 footprint=SO8
 }
@@ -63,14 +63,14 @@ C 40900 47800 1 0 0 in-1.sym
 T 40900 48100 5 10 0 0 0 0 1
 device=INPUT
 T 40900 48100 5 10 1 1 0 0 1
-refdes=SDA
+refdes=SDA1
 }
 C 55700 46900 1 0 1 in-1.sym
 {
 T 55700 47200 5 10 0 0 0 6 1
 device=INPUT
 T 55700 47100 5 10 1 1 0 6 1
-refdes=LED
+refdes=LED1
 }
 N 53600 47000 55100 47000 4
 C 40900 47400 1 0 0 in-1.sym
@@ -78,7 +78,7 @@ C 40900 47400 1 0 0 in-1.sym
 T 40900 47700 5 10 0 0 0 0 1
 device=INPUT
 T 40900 47700 5 10 1 1 0 0 1
-refdes=SCL
+refdes=SCL1
 }
 N 41500 47900 42800 47900 4
 N 41500 47500 42800 47500 4
@@ -88,7 +88,7 @@ C 49000 43500 1 0 0 out-1.sym
 T 49000 43800 5 10 0 0 0 0 1
 device=OUTPUT
 T 49000 43800 5 10 1 1 0 0 1
-refdes=START
+refdes=START1
 }
 N 48400 43600 49000 43600 4
 N 47400 43600 47000 43600 4
@@ -101,7 +101,7 @@ C 49300 48600 1 90 0 resistor-1.sym
 T 48900 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 48800 49300 5 10 1 1 180 6 1
-refdes=R?
+refdes=R10
 T 48800 49000 5 10 1 1 0 0 1
 value=10k
 }
@@ -113,7 +113,7 @@ C 48700 46300 1 0 0 capacitor-1.sym
 T 48900 47000 5 10 0 0 0 0 1
 device=CAPACITOR
 T 48900 46800 5 10 1 1 0 0 1
-refdes=C?
+refdes=C4
 T 48900 47200 5 10 0 0 0 0 1
 symversion=0.1
 T 49200 46200 5 10 1 1 0 0 1
@@ -124,7 +124,7 @@ C 54200 48500 1 90 0 capacitor-1.sym
 T 53500 48700 5 10 0 0 90 0 1
 device=CAPACITOR
 T 53600 49200 5 10 1 1 180 6 1
-refdes=C?
+refdes=C5
 T 53300 48700 5 10 0 0 90 0 1
 symversion=0.1
 T 53600 48700 5 10 1 1 0 0 1
@@ -143,7 +143,7 @@ C 54900 48500 1 90 0 resistor-1.sym
 T 54500 48800 5 10 0 0 90 0 1
 device=RESISTOR
 T 55000 49200 5 10 1 1 180 6 1
-refdes=R?
+refdes=R11
 }
 N 53600 47400 54800 47400 4
 N 54800 47400 54800 48500 4
@@ -153,7 +153,7 @@ C 47700 48600 1 90 0 resistor-1.sym
 T 47300 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 47200 49300 5 10 1 1 180 6 1
-refdes=R?
+refdes=R12
 T 47200 48900 5 10 1 1 0 0 1
 value=10k
 }
@@ -162,7 +162,7 @@ C 46900 48600 1 90 0 resistor-1.sym
 T 46500 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 46400 49300 5 10 1 1 180 6 1
-refdes=R?
+refdes=R13
 T 46400 48900 5 10 1 1 0 0 1
 value=10k
 }
@@ -171,7 +171,7 @@ C 42600 48600 1 90 0 resistor-1.sym
 T 42200 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 42700 49300 5 10 1 1 180 6 1
-refdes=R?
+refdes=R14
 T 42700 48900 5 10 1 1 0 0 1
 value=10k
 }
@@ -180,7 +180,7 @@ C 42000 48600 1 90 0 resistor-1.sym
 T 41600 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 41400 49200 5 10 1 1 180 6 1
-refdes=R?
+refdes=R15
 T 41400 48800 5 10 1 1 0 0 1
 value=10k
 }
@@ -199,7 +199,7 @@ C 45900 48600 1 90 0 resistor-1.sym
 T 45500 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 45300 49300 5 10 1 1 180 6 1
-refdes=R?
+refdes=R16
 T 45300 48900 5 10 1 1 0 0 1
 value=10k
 }
@@ -211,6 +211,6 @@ C 46400 44900 1 0 0 in-1.sym
 T 46400 45200 5 10 0 0 0 0 1
 device=INPUT
 T 46400 45200 5 10 1 1 0 0 1
-refdes=RST
+refdes=RST1
 }
 C 54600 49800 1 0 0 5V-plus-1.sym

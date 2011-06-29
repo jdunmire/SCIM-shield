@@ -5,7 +5,7 @@ C 49100 45500 1 0 0 lm393-1.sym
 T 49325 47550 5 8 0 0 0 0 1
 device=LM393
 T 49200 46400 5 10 1 1 0 0 1
-refdes=U1a
+refdes=U1
 T 49100 45500 5 10 0 0 0 0 1
 value=LM393
 }
@@ -121,21 +121,21 @@ C 43000 46000 1 0 0 in-1.sym
 T 43000 46300 5 10 0 0 0 0 1
 device=INPUT
 T 43000 46300 5 10 1 1 0 0 1
-refdes=Lx
+refdes=Lx1
 }
 C 43000 44400 1 0 0 in-1.sym
 {
 T 43000 44700 5 10 0 0 0 0 1
 device=INPUT
 T 43000 44700 5 10 1 1 0 0 1
-refdes=Cx
+refdes=Cx1
 }
 C 51600 45800 1 0 0 out-1.sym
 {
 T 51600 46100 5 10 0 0 0 0 1
 device=OUTPUT
 T 51600 46100 5 10 1 1 0 0 1
-refdes=Fout
+refdes=Fout2
 }
 N 43600 44500 45600 44500 4
 N 45600 44500 45600 44800 4

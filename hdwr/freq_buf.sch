@@ -5,7 +5,7 @@ C 48600 45700 1 0 0 lm393-1.sym
 T 48825 47750 5 8 0 0 0 0 1
 device=LM393
 T 48800 46600 5 10 1 1 0 0 1
-refdes=U1b
+refdes=U1
 T 48800 47600 5 10 0 0 0 0 1
 symversion=0.1
 T 48600 45700 5 10 0 0 0 0 1
@@ -24,7 +24,7 @@ C 48800 47500 1 0 0 resistor-1.sym
 T 49100 47900 5 10 0 0 0 0 1
 device=RESISTOR
 T 49000 47800 5 10 1 1 0 0 1
-refdes=R?
+refdes=R7
 T 49300 47300 5 10 1 1 0 0 1
 value=10k
 }
@@ -33,7 +33,7 @@ C 48000 47800 1 90 0 resistor-1.sym
 T 47600 48100 5 10 0 0 90 0 1
 device=RESISTOR
 T 47600 48400 5 10 1 1 180 0 1
-refdes=R?
+refdes=R8
 T 47400 48000 5 10 1 1 0 0 1
 value=10k
 }
@@ -42,7 +42,7 @@ C 48000 44500 1 90 0 resistor-1.sym
 T 47600 44800 5 10 0 0 90 0 1
 device=RESISTOR
 T 47700 45000 5 10 1 1 180 0 1
-refdes=R?
+refdes=R9
 T 47400 44600 5 10 1 1 0 0 1
 value=10k
 }
@@ -63,14 +63,14 @@ C 46200 45800 1 0 0 in-1.sym
 T 46200 46100 5 10 0 0 0 0 1
 device=INPUT
 T 46200 46100 5 10 1 1 0 0 1
-refdes=Fin
+refdes=Fin1
 }
 C 50400 46000 1 0 0 out-1.sym
 {
 T 50400 46300 5 10 0 0 0 0 1
 device=OUTPUT
 T 50700 46300 5 10 1 1 0 0 1
-refdes=Fout
+refdes=Fout1
 }
 T 50100 40900 9 20 1 0 0 0 1
 Arduino Shield: L/C/F Meter
