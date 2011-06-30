@@ -44,3 +44,18 @@ Sun 26 Jun 2011 09:59:22 PM PDT
 
 Mon 27 Jun 2011 09:51:57 PM PDT
     - Schematics are complete. Committing.
+
+Wed 29 Jun 2011 11:18:40 PM PDT
+    - Running gnetlist -g drc2 against all of the schematics at once
+      generates a bunch of duplicate refdes errors, but I thought the
+      reference designators were necessary to make the connection
+      between levels... Maybe drc2 should not be run against a
+      hierarchical design, but only against multiple page designs, or
+      one page at a time for hierarchical.
+
+    - I did not correct the warnings about missing pintype attribute for
+      the I/O devices in the subckrt schematics.
+
+    - I'm ignoring the error with respect to open-collectors. There is a
+      patch pending that would eliminate the error.
+

@@ -43,6 +43,12 @@ C 8300 3500 1 0 0 gnd-1.sym
 N 8400 3800 8400 4000 4
 N 8400 6500 8400 6300 4
 C 5400 6600 1 0 0 lc_osc.sym
+{
+T 5600 8200 5 10 1 1 0 0 1
+refdes=A1
+T 6406 6864 5 10 0 0 0 0 1
+device=none
+}
 C 11300 6700 1 0 0 freq_buf.sym
 {
 T 11500 8300 5 10 1 1 0 0 1
@@ -74,22 +80,11 @@ N 5700 4700 7100 4700 4
 N 7100 4700 7100 4000 4
 N 2500 6800 3400 6800 4
 N 2700 6800 2700 6200 4
-C 3400 6600 1 0 0 switch-dpdt-2.sym
-{
-T 3810 8250 5 10 0 0 0 0 1
-device=Dual_Two_Way_Switch
-T 3810 8000 5 10 1 1 0 0 1
-refdes=S2
-T 3810 8500 5 10 0 0 0 0 1
-footprint=SWITCH2
-}
 N 2500 7600 3400 7600 4
 N 4400 7000 4900 7000 4
 N 4400 7400 4900 7400 4
-N 4900 7400 4900 7000 4
 N 4400 7800 4900 7800 4
 N 4900 7600 5400 7600 4
-N 4900 7800 4900 7600 4
 N 5400 7100 4900 7100 4
 N 13500 7400 15900 7400 4
 N 4400 6600 4600 6600 4
@@ -177,4 +172,134 @@ T 16800 11600 5 10 1 1 0 6 1
 refdes=J3
 T 15248 9400 5 10 0 0 0 6 1
 footprint=JUMPER8
+}
+N 4900 7800 4900 7600 4
+N 4900 7000 4900 7400 4
+C 3400 6500 1 0 0 switch-dpdt-2.sym
+{
+T 3810 8250 5 10 0 0 0 0 1
+device=Dual_Two_Way_Switch
+T 3810 8000 5 10 1 1 0 0 1
+refdes=S2
+T 3810 8500 5 10 0 0 0 0 1
+footprint=SWITCH2
+}
+C 15400 9100 1 0 0 nc-left-1.sym
+{
+T 15400 9500 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 9900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 11200 1 0 0 nc-left-1.sym
+{
+T 15400 11600 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 12000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 10900 1 0 0 nc-left-1.sym
+{
+T 15400 11300 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 11700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 10600 1 0 0 nc-left-1.sym
+{
+T 15400 11000 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 11400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 10300 1 0 0 nc-left-1.sym
+{
+T 15400 10700 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 11100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 10000 1 0 0 nc-left-1.sym
+{
+T 15400 10400 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 10800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 9700 1 0 0 nc-left-1.sym
+{
+T 15400 10100 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 10500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 9400 1 0 0 nc-left-1.sym
+{
+T 15400 9800 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 10200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 6900 1 0 0 nc-left-1.sym
+{
+T 15400 7300 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 7700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 5700 1 0 0 nc-left-1.sym
+{
+T 15400 6100 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 6500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 5300 1 0 0 nc-left-1.sym
+{
+T 15400 5700 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 6100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 3000 11200 1 0 0 nc-right-1.sym
+{
+T 3100 11700 5 10 0 0 0 0 1
+value=NoConnection
+T 3100 11900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 3000 9200 1 0 0 nc-right-1.sym
+{
+T 3100 9700 5 10 0 0 0 0 1
+value=NoConnection
+T 3100 9900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 9200 11300 1 0 0 nc-right-1.sym
+{
+T 9300 11800 5 10 0 0 0 0 1
+value=NoConnection
+T 9300 12000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 9200 10900 1 0 0 nc-right-1.sym
+{
+T 9300 11400 5 10 0 0 0 0 1
+value=NoConnection
+T 9300 11600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 9200 10500 1 0 0 nc-right-1.sym
+{
+T 9300 11000 5 10 0 0 0 0 1
+value=NoConnection
+T 9300 11200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 9200 10100 1 0 0 nc-right-1.sym
+{
+T 9300 10600 5 10 0 0 0 0 1
+value=NoConnection
+T 9300 10800 5 10 0 0 0 0 1
+device=DRC_Directive
 }

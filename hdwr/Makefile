@@ -10,10 +10,9 @@ PROJNAME=lcMeter
 TOPSCHEM=$(PROJNAME)_top.sch
 OTHERSCHEM=lc_ui.sch lc_osc.sch freq_buf.sch
 
-check: $(PROJNAME).drc
+ALLSCHEM=$(TOPSCHEM) $(OTHERSCHEM)
 
-$(PROJNAME).drc: $(TOPSCHEM) $(OTHERSCHEM)
-	gnetlist -g drc2 -o $@ $<
+check: $(addsuffix .drc,$(basename $(ALLSCHEM)))
 
 all: simulate
 
@@ -22,6 +21,9 @@ simulate: lc_osc.raw
 lc_osc.mod: spicecmds models/LM339.5_1 models/LM393.5_1
 
 newUnoTrial.pcb: newUnoTrial.sch
+
+%.drc: %.sch
+	gnetlist -g drc2 -o $@ $^
 
 %.pcb: %.prj
 	gsch2pcb $<
@@ -52,6 +54,7 @@ clean:
 	$(RM) *.cmd
 	$(RM) *.net
 	$(RM) *.new.pcb
+	$(RM) *.drc
 
 
 distclean: clean
