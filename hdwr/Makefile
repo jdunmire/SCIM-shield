@@ -16,14 +16,16 @@ check: $(addsuffix .drc,$(basename $(ALLSCHEM)))
 
 all: simulate
 
-simulate: lc_osc.raw
+simulate: spice_capMeter.raw
 
 lc_osc.mod: spicecmds models/LM339.5_1 models/LM393.5_1
+
+spice_capMeter.mod: spicecmds models/LM393.5_1 lc_osc.sch freq_buf.sch
 
 newUnoTrial.pcb: newUnoTrial.sch
 
 %.drc: %.sch
-	gnetlist -g drc2 -o $@ $^
+	gnetlist -g drc2 -o $@ $<
 
 %.pcb: %.prj
 	gsch2pcb $<
@@ -44,9 +46,10 @@ newUnoTrial.pcb: newUnoTrial.sch
 
 # ngspice results
 %.raw: %.mod
-	ngspice -b $< -r $@ -o messages.log
+	ngspice -b $< -r $@ 2>&1 | tee $(addprefix .log,$(basename $(notdir $<)))
+	# 
+	# View results with gwave $@
 	#
-	# view with gwave lc_osc.raw
 
 clean:
 	$(RM) *.log *.raw
