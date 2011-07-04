@@ -1,5 +1,5 @@
 #
-# *.mod - spice netlist for modeling
+# *.ckt - spice netlist for modeling
 # *.raw - output from ngspice, use gwave to view
 # *.sch - schematic files view/edit with gschem
 # *.prj - gsch2pcb project file
@@ -18,9 +18,7 @@ all: simulate
 
 simulate: spice_capMeter.raw
 
-lc_osc.mod: spicecmds models/LM339.5_1 models/LM393.5_1
-
-spice_capMeter.mod: spicecmds models/LM393.5_1 lc_osc.sch freq_buf.sch
+spice_capMeter.ckt: models/LM393.5_1 lc_osc.sch freq_buf.sch
 
 newUnoTrial.pcb: newUnoTrial.sch
 
@@ -41,11 +39,11 @@ newUnoTrial.pcb: newUnoTrial.sch
 	) >$@
 
 # ngspice models
-%.mod: %.sch
+%.ckt: %.sch
 	gnetlist -g spice-sdb $< -o $@
 
 # ngspice results
-%.raw: %.mod
+%.raw: %.ckt
 	ngspice -b $< -r $@ 2>&1 | tee $(addsuffix .log,$(basename $(notdir $<)))
 	# 
 	# View results with gwave $@
@@ -53,7 +51,7 @@ newUnoTrial.pcb: newUnoTrial.sch
 
 clean:
 	$(RM) *.log *.raw
-	$(RM) *.mod
+	$(RM) *.ckt
 	$(RM) *.cmd
 	$(RM) *.net
 	$(RM) *.new.pcb
