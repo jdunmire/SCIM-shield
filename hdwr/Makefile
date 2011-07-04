@@ -18,7 +18,7 @@ all: simulate
 
 simulate: spice_capMeter.raw
 
-spice_capMeter.ckt: models/LM393.5_1 lc_osc.sch freq_buf.sch
+spice_inductMeter.ckt spice_capMeter.ckt: models/LM393.5_1 lc_osc.sch freq_buf.sch
 
 newUnoTrial.pcb: newUnoTrial.sch
 
