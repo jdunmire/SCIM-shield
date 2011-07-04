@@ -46,7 +46,7 @@ newUnoTrial.pcb: newUnoTrial.sch
 
 # ngspice results
 %.raw: %.mod
-	ngspice -b $< -r $@ 2>&1 | tee $(addprefix .log,$(basename $(notdir $<)))
+	ngspice -b $< -r $@ 2>&1 | tee $(addsuffix .log,$(basename $(notdir $<)))
 	# 
 	# View results with gwave $@
 	#
