@@ -46,14 +46,13 @@ Fri 10 Jun 2011 09:10:53 PM PDT
     The shield_outline.pcb includes a netlist section, but I don't think
     it is needed.
 
-    TODO list:
+    TODO: set a rocking-d symbol on the shield as my 'brand'
       - fix reference designator names for the UNO connectors in the
           symbol files. Use J1-4 and not IOH, IOL, etc. - DONE
       - delete netlist from shield_outline.pcb - DONE
       - add missing hole to the shield - DONE
       - set a version number on the shield - DONE
       - set a copyright/license notice on the shield - DONE
-      - set a rocking-d symbol on the shield as my 'brand'
       - reconsider names for the shield connect symbol file names. -
         DONE
 

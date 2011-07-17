@@ -82,7 +82,7 @@ device=directive
 T 40400 49000 5 10 1 1 0 0 1
 refdes=A5
 T 40400 48700 5 10 1 1 0 0 1
-value=.AC dec 1000 1 10000kHz
+value=.AC dec 1000 10kHz 50000kHz
 }
 C 45200 45700 1 0 0 vac-1.sym
 {

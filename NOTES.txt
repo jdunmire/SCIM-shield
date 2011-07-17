@@ -88,11 +88,13 @@ Sun 03 Jul 2011 11:11:52 PM PDT
       - R223, needs a different number (R7) - DONE, R7
       - The simulation fails if R223 is 10K but works if it is 100k.
         This sets the historesis, so check the buffer stand-alone to see
-        how big the input signal needs to be.
+        how big the input signal needs to be. - FIXED by changing the
+        .TRANS simulation command to includ 'UIC' (Use initial conditions).
       - I think the highest frequency occurs when there is no capacitor
         and no inductor. Verify this. Yes. DONE
       - Determine the highest frequency that can be passed by the
-        freq_buf. This will set the highest input frequency.
+        freq_buf. This will set the highest input frequency. DONE - see
+        below.
 
       - Clean-up schematics- DONE
       - Add .TRANS directives to the spice_* schematics rather than
@@ -136,4 +138,19 @@ Sun 17 Jul 2011 09:02:07 AM PDT
       not getting the diodes biased properly at the start of the AC
       simulation. So for now I am dropping the diodes in the spice
       frequency model.
+
+
+Sun 17 Jul 2011 10:23:28 AM PDT
+    - Spice simulation of the frequency meter shows that the 3db point
+      is at about 9.7MHz. This 'cut-off' frequency is primarily due to
+      the 10pf input load. Even so, the effective frequency range may be
+      much larger because of the high gain of the comparator may yield
+      a large enough voltage swing to trigger the edge detection used
+      for counting.
+
+
+Sun 17 Jul 2011 10:37:11 AM PDT
+    - Changed R7 back to 10K because I found got the .TRANS simulations
+      to work using the UIC (Use Initial Contitions) flag.
+    - Recalculated the cut-off frequency which is now about 26MHz
 

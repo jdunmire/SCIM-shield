@@ -82,7 +82,7 @@ device=RESISTOR
 T 49000 47800 5 10 1 1 0 0 1
 refdes=R7
 T 49000 47300 5 10 1 1 0 0 1
-value=100k
+value=10k
 }
 C 50600 47500 1 270 0 resistor-1.sym
 {
