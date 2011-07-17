@@ -16,7 +16,7 @@ check: $(addsuffix .drc,$(basename $(ALLSCHEM)))
 
 all: simulate
 
-simulate: spice_capMeter.raw
+simulate: spice_capMeter.raw spice_inductMeter.raw spice_freqMeter.raw
 
 spice_inductMeter.ckt spice_capMeter.ckt: models/LM393.5_1 lc_osc.sch freq_buf.sch
 spice_freqMeter.ckt: models/LM393.5_1 freq_buf.sch
@@ -48,6 +48,7 @@ newUnoTrial.pcb: newUnoTrial.sch
 	ngspice -b $< -r $@ 2>&1 | tee $(addsuffix .log,$(basename $(notdir $<)))
 	# 
 	# View results with gwave $@
+	# Set X-axis to log when viewing frequencies.
 	#
 
 clean:
