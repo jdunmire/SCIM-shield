@@ -154,3 +154,17 @@ Sun 17 Jul 2011 10:37:11 AM PDT
       to work using the UIC (Use Initial Contitions) flag.
     - Recalculated the cut-off frequency which is now about 26MHz
 
+
+Sun 17 Jul 2011 10:18:28 PM PDT
+    - Found the problem with the diode modeling- the capacitance value
+      in the model did not have a units symbol. So it was 30 farads(!)
+      not 30pF.
+    - Now both AC and TRAN analysis can be run on spice_freqMeter.sch
+      and spice_freqMeter.sch includes the diodes.
+    - I couldn't find a ways to run both the AC and the TRAN analysis
+      without modifying the SPICE directives and the V2 definition. So
+      follow the notes in the file.
+
+    TODO: run TRAN analysis at higher frequencies and evaluate diodes
+    TODO: select a diode and put in a better model.
+    Diodes Inc has a good selection of spice models.
