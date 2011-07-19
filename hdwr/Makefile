@@ -23,6 +23,18 @@ spice_freqMeter.ckt: models/LM393.5_1 freq_buf.sch
 
 newUnoTrial.pcb: newUnoTrial.sch
 
+lcMeter_top.bom: $(ALLSCHEM)
+
+lcMeter_top.bom2: $(ALLSCHEM)
+
+lcMeter_top.drc: $(ALLSCHEM)
+
+%.bom: %.sch attribs
+	gnetlist -g bom -o $@ $<
+
+%.bom2: %.sch attribs
+	gnetlist -g bom2 -o $@ $<
+
 %.drc: %.sch
 	gnetlist -g drc2 -o $@ $<
 
@@ -58,6 +70,7 @@ clean:
 	$(RM) *.net
 	$(RM) *.new.pcb
 	$(RM) *.drc
+	$(RM) *.bom *.bom2
 
 
 distclean: clean

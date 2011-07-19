@@ -101,7 +101,7 @@ C 49300 48600 1 90 0 resistor-1.sym
 T 48900 48900 5 10 0 0 90 0 1
 device=RESISTOR
 T 48800 49300 5 10 1 1 180 6 1
-refdes=R10
+refdes=R17
 T 48800 49000 5 10 1 1 0 0 1
 value=10k
 }
