@@ -168,3 +168,28 @@ Sun 17 Jul 2011 10:18:28 PM PDT
     TODO: run TRAN analysis at higher frequencies and evaluate diodes
     TODO: select a diode and put in a better model.
     Diodes Inc has a good selection of spice models.
+
+Mon 18 Jul 2011 09:33:26 PM PDT
+    - Setup attribs file for BOM/BOM2
+    - now I can easily see which items need a footprint
+    - for things like switches, I'm going to set the value to none or the vendor
+      part number, that way there will be no 'unknown' values in the BOM
+      listing when the design is complete.
+
+    Footprints:
+       Resistors: 0.125W_Carbon_resistor
+       Added to all resistors, 2011-07-22
+
+
+Fri 22 Jul 2011 08:46:24 PM PDT
+    - Current limiting resistor R11
+      The spec for the LED back light is 3.0v, at 15mA (20mA max)
+      The spec for the Atmel output pins is 0.9v max at 20mA
+      There really isn't a resistor that will work for the full range of
+      max/min values of power supply and Vout from the pin. See
+      R11_LED_Calcs.ods. If the power supply is limited to 4.75-5.25v,
+      then a 56 ohm 1% is pretty close. The 5.25v cases exceed the
+      max current spec on the LED, but I don't know that 20mA is really
+      the 'max' current that the LED can handle, or if it is the max
+      minimum-voltage required to fully light the LED. If the later then
+      the problem would be the 4.75/0.9 case.

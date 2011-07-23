@@ -10,6 +10,8 @@ T 7200 5400 5 10 1 1 0 0 1
 refdes=R6
 T 7200 4900 5 10 1 1 0 0 1
 value=1k
+T 7000 5100 5 10 0 1 0 0 1
+footprint=0.125W_Carbon_resistor
 }
 C 8600 5400 1 90 0 diode-1.sym
 {
