@@ -120,6 +120,8 @@ T 48900 47200 5 10 0 0 0 0 1
 symversion=0.1
 T 49200 46200 5 10 1 1 0 0 1
 value=1uF
+T 49200 46500 5 10 0 1 0 0 1
+footprint=CK05_type_Capacitor
 }
 C 54200 48500 1 90 0 capacitor-1.sym
 {
@@ -131,6 +133,8 @@ T 53300 48700 5 10 0 0 90 0 1
 symversion=0.1
 T 53600 48700 5 10 1 1 0 0 1
 value=1uF
+T 54100 49000 5 10 0 1 0 0 1
+footprint=CK05_type_Capacitor
 }
 N 49800 46500 49600 46500 4
 N 48700 46500 48600 46500 4
@@ -230,3 +234,39 @@ T 46400 45200 5 10 1 1 0 0 1
 refdes=RST
 }
 C 54600 49800 1 0 0 5V-plus-1.sym
+C 42200 43500 1 90 0 capacitor-1.sym
+{
+T 41500 43700 5 10 0 0 90 0 1
+device=CAPACITOR
+T 41700 44100 5 10 1 1 180 0 1
+refdes=C6
+T 41300 43700 5 10 0 0 90 0 1
+symversion=0.1
+T 41300 43700 5 10 1 1 0 0 1
+value=0.1 uF
+T 42200 43500 5 10 0 1 0 0 1
+footprint=CK05_type_Capacitor
+}
+C 43600 43500 1 90 0 capacitor-1.sym
+{
+T 42900 43700 5 10 0 0 90 0 1
+device=CAPACITOR
+T 43100 44100 5 10 1 1 180 0 1
+refdes=C7
+T 42700 43700 5 10 0 0 90 0 1
+symversion=0.1
+T 42700 43700 5 10 1 1 0 0 1
+value=0.1 uF
+T 43600 43500 5 10 0 1 0 0 1
+footprint=CK05_type_Capacitor
+}
+C 43300 43000 1 0 0 gnd-1.sym
+C 41900 43000 1 0 0 gnd-1.sym
+C 41800 44700 1 0 0 5V-plus-1.sym
+C 43200 44700 1 0 0 3.3V-plus-1.sym
+N 42000 44700 42000 44400 4
+N 43400 44700 43400 44400 4
+N 43400 43500 43400 43300 4
+N 42000 43500 42000 43300 4
+T 42100 45200 9 10 1 0 0 0 1
+Locate near U3

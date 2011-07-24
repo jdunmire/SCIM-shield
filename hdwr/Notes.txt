@@ -80,3 +80,23 @@ Tue 28 Jun 2011 11:28:17 PM PDT
       designators for the I/O pins in the sub-circuits were assigned
       numbers. This then caused an error when the DRC was run.
 
+
+Sat 23 Jul 2011 07:39:03 PM PDT
+    - For the 1uF capacitors use a CK05 footprint. The pin spacing is
+      0.200 inches which should also work for many ceramic dipped which
+      have lead spacing of 0.197 inches
+
+    - Added bypass caps for the level shifter. 0.1 uF
+    
+    - The 1000pF precision cap has a lead spacing of 0.343",
+      pin-dia=0.032". There is a lower voltage version, at a higher cost
+      from Digikey, with a closer pin spacing: 0.234, pin dia = 0.025".
+
+    - Change C1 and C2 to ceramic. That eliminates the plolarity, but
+      the tolerance is -20%/+80%. I don't think this tolerance range
+      will have an effect on the operation, but I should check with
+      spice. The lead spacing would be 0.197" (5mm), pin dia = 0.5mm
+      (0.019")
+
+      TODO: check C1/C2 tolerance
+
