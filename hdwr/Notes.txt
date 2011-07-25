@@ -100,3 +100,38 @@ Sat 23 Jul 2011 07:39:03 PM PDT
 
       TODO: check C1/C2 tolerance
 
+
+Sun 24 Jul 2011 01:24:56 PM PDT
+    - Results of spice analysis of C1/C2 tolerance.
+      I found that for large values of the test capacitor, the
+      difference in values between C1/C2 impacts the oscillator startup.
+      If C2 is 11uf and C1 is 9uf (+10%/-10%) then the oscillator does
+      not start if the test cap is 10uf or above. If the mismatch is 2%
+      then the test capacitor could be up to 50uf.
+
+      So the tolerance does matter.
+
+
+
+Sun 24 Jul 2011 05:22:24 PM PDT
+    - 10uF cap options:
+      Ceramic
+        FK24Y5V1A106Z, (4.5mm, 5mm,0.5mm ) 0.177 ,0.197, -.0197
+        There is an FK1x series that would that has a pin spacing of
+        2.5mm (0.100") which would be a better matched to the other
+        capacitor alternatives.
+
+      Aluminum Electrolytic
+        SK100M050ST, 0.197, 0.079, 0.0197
+
+      Tantulum Electrolytic
+        TAP106K016CCS, 0.200,0.100, 0.020 
+
+
+Sun 24 Jul 2011 09:40:46 PM PDT
+    - Need footprints for:
+      Precision cap, inductor
+      Need custom/new footprints for BNC, Pushbutton, SPDT, LCD, S1, and
+      polarized caps
+
+      DO-35, DO-204AH
