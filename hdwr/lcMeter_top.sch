@@ -11,7 +11,7 @@ refdes=R6
 T 7200 4900 5 10 1 1 0 0 1
 value=1k
 T 7000 5100 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 8600 5400 1 90 0 diode-1.sym
 {
@@ -20,7 +20,7 @@ device=DIODE
 T 8100 6000 5 10 1 1 180 0 1
 refdes=D1
 T 8600 5400 5 10 0 1 0 0 1
-footprint=DO35
+footprint=DIO__DO-35
 T 7600 5700 5 10 1 1 0 0 1
 value=1N4148
 }
@@ -31,7 +31,7 @@ device=DIODE
 T 8000 4600 5 10 1 1 180 0 1
 refdes=D2
 T 8600 4000 5 10 0 1 0 0 1
-footprint=DO35
+footprint=DIO__DO-35
 T 7500 4300 5 10 1 1 0 0 1
 value=1N4148
 }

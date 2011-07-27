@@ -10,6 +10,8 @@ T 46700 45700 5 10 1 1 0 0 1
 value=10uf
 T 46900 46800 5 10 0 0 0 6 1
 symversion=0.1
+T 47100 45900 5 10 0 1 0 0 1
+footprint=CAP_AL_RADIAL.fp
 }
 C 48400 44200 1 270 0 capacitor-2.sym
 {
@@ -21,6 +23,8 @@ T 48900 43600 5 10 1 1 0 0 1
 value=10uf
 T 49300 44000 5 10 0 0 270 0 1
 symversion=0.1
+T 48400 44200 5 10 0 1 0 0 1
+footprint=CAP_AL_RADIAL.fp
 }
 C 45800 44800 1 90 0 capacitor-1.sym
 {
@@ -47,6 +51,8 @@ T 44400 46700 5 10 0 0 0 0 1
 symversion=0.1
 T 44400 45600 5 10 1 1 0 0 1
 comment=5%
+T 44600 46100 5 10 0 1 0 0 1
+footprint=AXIAL_LAY 400
 }
 C 48800 47400 1 0 0 resistor-1.sym
 {
@@ -57,7 +63,7 @@ refdes=R1
 T 49000 47200 5 10 1 1 0 0 1
 value=100k
 T 49300 47600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 47800 47700 1 90 0 resistor-1.sym
 {
@@ -68,7 +74,7 @@ refdes=R2
 T 47100 48000 5 10 1 1 0 0 1
 value=100k
 T 47800 47700 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 50500 48600 1 270 0 resistor-1.sym
 {
@@ -79,7 +85,7 @@ refdes=R3
 T 50800 47900 5 10 1 1 0 0 1
 value=1k
 T 46100 48100 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 49000 44400 1 0 0 resistor-1.sym
 {
@@ -90,7 +96,7 @@ refdes=R4
 T 49200 44200 5 10 1 1 0 0 1
 value=47k
 T 49400 44500 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 47800 44300 1 90 0 resistor-1.sym
 {
@@ -101,7 +107,7 @@ refdes=R5
 T 47100 44600 5 10 1 1 0 0 1
 value=100k
 T 47500 39400 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 N 45100 46100 46200 46100 4
 N 47100 46100 49100 46100 4

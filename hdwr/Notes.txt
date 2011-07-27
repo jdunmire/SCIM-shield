@@ -141,5 +141,13 @@ Sun 24 Jul 2011 09:40:46 PM PDT
       generic 400mil footprint.
 
       For the precision Cap, CD19FD102JO3F, pin spacing is 0.344, pin
-      diameter is 0.032, Width is 0.52 and length is 0.65. Pin are space
+      diameter is 0.032, Width is 0.52 and length is 0.65. Pins are space
       along the length direction.
+
+      Check dimensions on
+        L1 pin diameter- OK. Pins are 20mils, hole is 30mils
+        D1/D2 pin spacing and diameter, dia=22mils, body is 167mils.
+        Existing footprint is too small.
+
+Tue 26 Jul 2011 10:29:45 PM PDT
+    - Changed to a different DO35 footprint.

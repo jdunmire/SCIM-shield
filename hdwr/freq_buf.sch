@@ -17,7 +17,7 @@ refdes=R8
 T 47400 48000 5 10 1 1 0 0 1
 value=10k
 T 47900 48200 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 48000 44500 1 90 0 resistor-1.sym
 {
@@ -28,7 +28,7 @@ refdes=R9
 T 47400 44600 5 10 1 1 0 0 1
 value=10k
 T 47900 45100 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 N 47900 47800 47900 45400 4
 N 47900 46300 48600 46300 4
@@ -88,7 +88,7 @@ refdes=R7
 T 49000 47300 5 10 1 1 0 0 1
 value=10k
 T 49400 47700 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 50600 47500 1 270 0 resistor-1.sym
 {
@@ -99,7 +99,7 @@ refdes=R10
 T 50900 46800 5 10 1 1 0 0 1
 value=3.3K
 T 50700 47100 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 N 47900 48800 50700 48800 4
 N 50700 48800 50700 47500 4

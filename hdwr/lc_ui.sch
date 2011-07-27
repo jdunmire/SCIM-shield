@@ -105,7 +105,7 @@ refdes=R17
 T 48700 48900 5 10 1 1 0 0 1
 value=10k
 T 49300 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 49000 49800 1 0 0 3.3V-plus-1.sym
 N 49200 49800 49200 49500 4
@@ -151,7 +151,7 @@ device=RESISTOR
 T 55000 49200 5 10 1 1 180 6 1
 refdes=R11
 T 54900 48500 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 T 55000 48800 5 10 1 1 0 0 1
 value=56
 }
@@ -167,7 +167,7 @@ refdes=R12
 T 47100 48900 5 10 1 1 0 0 1
 value=10k
 T 47700 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 46900 48600 1 90 0 resistor-1.sym
 {
@@ -178,7 +178,7 @@ refdes=R13
 T 46300 48900 5 10 1 1 0 0 1
 value=10k
 T 46900 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 42600 48600 1 90 0 resistor-1.sym
 {
@@ -189,7 +189,7 @@ refdes=R14
 T 42700 48900 5 10 1 1 0 0 1
 value=10k
 T 42600 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 C 42000 48600 1 90 0 resistor-1.sym
 {
@@ -200,7 +200,7 @@ refdes=R15
 T 41400 48800 5 10 1 1 0 0 1
 value=10k
 T 42000 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 N 46800 48600 46800 47900 4
 N 47600 48600 47600 47500 4
@@ -221,7 +221,7 @@ refdes=R16
 T 45300 48900 5 10 1 1 0 0 1
 value=10k
 T 45900 48600 5 10 0 1 0 0 1
-footprint=0.125_W_Carbon_resistor
+footprint=0.125W_Carbon_Resistor
 }
 N 45200 47100 45800 47100 4
 N 45800 47100 45800 48600 4
