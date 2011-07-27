@@ -115,9 +115,10 @@ Sun 24 Jul 2011 01:24:56 PM PDT
 
 Sun 24 Jul 2011 05:22:24 PM PDT
     - 10uF cap options:
+      Dimensions are (dia, pin spacing, pin dia)
       Ceramic
         FK24Y5V1A106Z, (4.5mm, 5mm,0.5mm ) 0.177 ,0.197, -.0197
-        There is an FK1x series that would that has a pin spacing of
+        There is an FK1x series that has a pin spacing of
         2.5mm (0.100") which would be a better matched to the other
         capacitor alternatives.
 
@@ -135,3 +136,10 @@ Sun 24 Jul 2011 09:40:46 PM PDT
       polarized caps
 
       DO-35, DO-204AH
+
+      For the 78F Series RF Choke, use 0.400" spacing. There is a
+      generic 400mil footprint.
+
+      For the precision Cap, CD19FD102JO3F, pin spacing is 0.344, pin
+      diameter is 0.032, Width is 0.52 and length is 0.65. Pin are space
+      along the length direction.
