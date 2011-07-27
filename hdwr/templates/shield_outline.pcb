@@ -879,7 +879,7 @@ Element["lock" "Description_PAD125" "" "PAD125" 260000 70000 0 0 4 100 ""]
 
 	)
 
-Element["" "JUMPER8" "J1" "unknown" 250000 10000 8000 -3000 0 100 ""]
+Element["lock" "JUMPER8" "J1" "unknown" 250000 10000 8000 -3000 0 100 ""]
 (
 	Pin[0 0 6000 3000 6600 4000 "1" "1" "square,edge2"]
 	Pin[-10000 0 6000 3000 6600 4000 "2" "2" "edge2"]
