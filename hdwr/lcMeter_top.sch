@@ -17,18 +17,18 @@ C 8600 5400 1 90 0 diode-1.sym
 {
 T 8000 5800 5 10 0 0 90 0 1
 device=DIODE
-T 8100 6000 5 10 1 1 180 0 1
+T 8000 6100 5 10 1 1 180 0 1
 refdes=D1
 T 8600 5400 5 10 0 1 0 0 1
 footprint=DIO__DO-35
-T 7600 5700 5 10 1 1 0 0 1
+T 7500 5700 5 10 1 1 0 0 1
 value=1N4148
 }
 C 8600 4000 1 90 0 diode-1.sym
 {
 T 8000 4400 5 10 0 0 90 0 1
 device=DIODE
-T 8000 4600 5 10 1 1 180 0 1
+T 8000 4700 5 10 1 1 180 0 1
 refdes=D2
 T 8600 4000 5 10 0 1 0 0 1
 footprint=DIO__DO-35
@@ -107,7 +107,9 @@ C 5600 4700 1 0 0 BNC-1.sym
 T 5950 5350 5 10 0 0 0 0 1
 device=BNC
 T 5600 5500 5 10 1 1 0 0 1
-refdes=CONN1
+refdes=J5
+T 5600 4700 5 10 0 0 0 0 1
+footprint=BNC
 }
 C 11200 9000 1 0 0 lc_ui.sym
 {

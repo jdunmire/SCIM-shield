@@ -131,9 +131,14 @@ Sun 24 Jul 2011 05:22:24 PM PDT
 
 Sun 24 Jul 2011 09:40:46 PM PDT
     - Need footprints for:
-      Precision cap, inductor
-      Need custom/new footprints for BNC, Pushbutton, SPDT, LCD, S1, and
-      polarized caps
+      Precision cap, inductor - DONE
+      Need custom/new footprints for:
+         BNC,
+         Pushbutton,
+         SPDT,
+         LCD,
+         S1
+      polarized caps- DONE
 
       DO-35, DO-204AH
 
@@ -151,3 +156,39 @@ Sun 24 Jul 2011 09:40:46 PM PDT
 
 Tue 26 Jul 2011 10:29:45 PM PDT
     - Changed to a different DO35 footprint.
+
+Sat 30 Jul 2011 08:13:27 PM PDT
+    - Dimensions for BNC, scaled from mm to mils
+    Body diameter = 11mm
+    4 holes 6.26mm between centers on a square.  1.60mm dia.
+    1 center hole 1.1mm dia
+    tolerance = 0.5mm
+    11mm => 433 mils
+    6.26mm => 246.5 mils
+    1.6mm => 63 mils
+    1.1mm => 43.3 mils
+    0.5mm => 19.7mils
+
+
+    "Getting Started With PCB" has info on drill and annulus sizes for
+    pins.
+
+    Pin size calculation: 1.1 = drill size + 2 * annulus = pin size
+      - set annulus to the trace width, for lack of other guidance
+
+      1.1mm hole: 43.3 + 10 + 10 = 63.3 mils
+      1.6mm hole: 63 + 10 + 10 = 83 mils
+
+
+    Trace Type  mils    mm
+    ----------  ----   ---
+    Signal      10.0   0.25
+    Power       25.0   0.64
+    Fat         40.0   1.02
+    Skinny       6.0   0.15
+
+Sat 30 Jul 2011 10:35:59 PM PDT
+    - BNC.fp is complete but not committed
+    - Need to decide on a subdirectory for pkgs and put the local
+      footprints there. Otherwise they don't show up in the library
+      window.
