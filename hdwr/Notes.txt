@@ -150,6 +150,9 @@ Sun 24 Jul 2011 09:40:46 PM PDT
       diameter is 0.032, Width is 0.52 and length is 0.65. Pins are space
       along the length direction.
 
+      0.65 - 0.344 / 2 = .153
+      .52 /2 = .26
+
       Check dimensions on
         L1 pin diameter- OK. Pins are 20mils, hole is 30mils
         D1/D2 pin spacing and diameter, dia=22mils, body is 167mils.
@@ -200,3 +203,7 @@ Sun 31 Jul 2011 04:32:19 PM PDT
     - committed BNC.fp
     - specified BNC as the footprint for J5 (also changed refdes from
       CONN1 to J5
+
+Mon 01 Aug 2011 09:48:16 PM PDT
+    - With the LCD display, the components are not going to fit on the
+      shield. Need to use an over-sized shield or eliminate the LCD.

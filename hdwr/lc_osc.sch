@@ -38,6 +38,8 @@ T 44900 45000 5 10 0 0 90 0 1
 symversion=0.1
 T 44700 44800 5 10 1 1 0 0 1
 comment=1%
+T 45700 45200 5 10 0 1 0 0 1
+footprint=CD19FD102J03F.fp
 }
 C 44200 46000 1 0 0 inductor-1.sym
 {
