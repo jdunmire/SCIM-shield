@@ -207,3 +207,9 @@ Sun 31 Jul 2011 04:32:19 PM PDT
 Mon 01 Aug 2011 09:48:16 PM PDT
     - With the LCD display, the components are not going to fit on the
       shield. Need to use an over-sized shield or eliminate the LCD.
+
+Wed 03 Aug 2011 11:05:22 PM PDT
+    - Soldermask needs to be 0.005" larger than copper
+    - copper 0.014" over hole size for components, 0.010 for vias
+      The 0.125W resistor is 0.032" over hole diameter and the 1W is
+      0.037 over the hole diameter.

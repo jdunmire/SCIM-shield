@@ -6,6 +6,8 @@ T 47800 43900 5 10 1 1 0 0 1
 refdes=S3
 T 47800 44200 5 10 0 0 0 0 1
 device=SWITCH_PUSHBUTTON_NO
+T 47800 43700 5 10 0 1 0 0 1
+footprint=SW_PB_EVQ2.fp
 }
 C 40200 40200 1 0 0 copyright-1.sym
 {
