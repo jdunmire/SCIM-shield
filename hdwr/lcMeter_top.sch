@@ -43,6 +43,8 @@ T 10100 6800 5 10 0 0 180 0 1
 device=SPDT
 T 10100 7000 5 10 1 1 180 0 1
 refdes=S1
+T 10500 7600 5 10 0 1 0 0 1
+footprint=eg1218.fp
 }
 N 9600 7200 9200 7200 4
 N 9200 7200 9200 5200 4
@@ -194,7 +196,7 @@ device=Dual_Two_Way_Switch
 T 3810 8000 5 10 1 1 0 0 1
 refdes=S2
 T 3810 8500 5 10 0 0 0 0 1
-footprint=SWITCH2
+footprint=JS20211CQN.fp
 }
 C 15400 9100 1 0 0 nc-left-1.sym
 {

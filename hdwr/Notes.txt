@@ -213,3 +213,15 @@ Wed 03 Aug 2011 11:05:22 PM PDT
     - copper 0.014" over hole size for components, 0.010 for vias
       The 0.125W resistor is 0.032" over hole diameter and the 1W is
       0.037 over the hole diameter.
+
+Thu 04 Aug 2011 09:16:53 PM PDT
+    - It is not easy to resize the shield because all the components and
+      outline remain at the top left corner. It is also difficult to
+      have components hang off the board because components are
+      constrained to the visible window which can not be zoomed out
+      beyond the extent of board.
+    - Maybe I should turn the template pcb into an element....
+    - Or maybe there are some more controls- the UI for PCB is not much
+      like any other X program. For example, you can only move an object
+      (at least a refdes) if it has not been selected, but clicking on
+      it selects!
