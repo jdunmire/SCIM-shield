@@ -236,3 +236,7 @@ Sat 20 Aug 2011 05:09:18 PM PDT
       the pkgs directory will not be found unless the "elements-dir"
       command is present.
 
+
+Sun 21 Aug 2011 10:35:48 PM PDT
+    - TODO larger keep outs on switches, BNC, and 1000pF cap
+
