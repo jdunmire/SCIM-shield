@@ -239,4 +239,5 @@ Sat 20 Aug 2011 05:09:18 PM PDT
 
 Sun 21 Aug 2011 10:35:48 PM PDT
     - TODO larger keep outs on switches, BNC, and 1000pF cap
+    - TODO add bypass capacitor
 
