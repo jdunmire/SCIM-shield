@@ -1,0 +1,3 @@
+schematics lcMeter_nui.sch
+output-name lcMeter_nui
+elements-dir pkgs

@@ -225,3 +225,14 @@ Thu 04 Aug 2011 09:16:53 PM PDT
       like any other X program. For example, you can only move an object
       (at least a refdes) if it has not been selected, but clicking on
       it selects!
+
+Sat 20 Aug 2011 05:09:18 PM PDT
+    - To use xgsch2pcb:
+        $ xgsch2pcb lcMeter.gsch2pcb
+
+      The elements-dir pkgs lin in the .gsch2pcb file causes a warning:
+        'Warning: Unsupported project file line "elements-dir pkgs"'
+      but the line is used when gsch2pcb is run and local footprints in
+      the pkgs directory will not be found unless the "elements-dir"
+      command is present.
+

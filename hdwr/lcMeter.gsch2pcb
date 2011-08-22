@@ -1,0 +1,3 @@
+schematics lcMeter_top.sch
+output-name lcMeter
+elements-dir pkgs
