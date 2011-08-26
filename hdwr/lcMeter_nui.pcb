@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Thu Aug 25 20:34:07 2011
+# date:    Thu Aug 25 21:06:45 2011
 # user:    jerry (Jerry Dunmire,,,)
 # host:    jerry-laptop
 
@@ -8,7 +8,7 @@ FileVersion[20070407]
 
 PCB["outline" 270000 210000]
 
-Grid[1000.000000 0 0 1]
+Grid[1000.000000 0 0 0]
 Cursor[0 0 6.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
@@ -961,7 +961,7 @@ Element["" "0.125W_Carbon_Resistor" "R10" "3.3K" 15000 137000 5600 -13800 0 100 
 
 	)
 
-Element["selected" "DIP8" "U1" "LM393" 74000 137000 -17000 -5000 1 100 "selected"]
+Element["" "DIP8" "U1" "LM393" 74000 137000 -17000 -5000 1 100 ""]
 (
 	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
 	Pin[0 -10000 6000 3000 6600 2800 "2" "2" ""]
@@ -1185,6 +1185,27 @@ Element["" "ED3001_1-FD.fp" "T2" "unknown" 233250 34750 27000 -22000 0 100 ""]
 	ElementLine [-19685 -14337 -19685 14337 1000]
 
 	)
+
+Element["" "CK05_type_Capacitor" "C4" "0.1_uf" 24000 149000 33500 3000 2 150 ""]
+(
+	Pin[0 0 8000 3000 11000 3500 "1" "1" "edge2,thermal(0X,5)"]
+	Pin[20000 0 8000 3000 11000 3500 "2" "2" "edge2,thermal(4)"]
+	ElementLine [0 -5000 0 -4500 1000]
+	ElementLine [0 -5000 20000 -5000 1000]
+	ElementLine [20000 -5000 20000 -4500 1000]
+	ElementLine [20000 4500 20000 5000 1000]
+	ElementLine [0 5000 20000 5000 1000]
+	ElementLine [0 4500 0 5000 1000]
+
+	)
+
+Element["" "CAP_AL_RADIAL.fp" "C5" "10uf" 44000 169000 -14000 10000 2 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3000 "+" "1" "square,edge2"]
+	Pin[-8000 0 6000 3000 6600 3000 "-" "2" "edge2,thermal(0X)"]
+	ElementArc [-4000 0 10000 10000 180 360 1000]
+
+	)
 Layer(1 "solder")
 (
 	Line[15000 11000 15000 3000 1000 2000 "clearline"]
@@ -1366,7 +1387,7 @@ Layer(2 "component")
 	Line[145000 166000 145000 154000 2500 2000 ""]
 	Line[106000 124000 115000 124000 1000 2000 ""]
 	Line[225000 160000 226000 160000 1000 2000 ""]
-	Line[44000 137000 44000 138000 2500 2000 ""]
+	Line[44000 137000 45000 138000 2500 2000 ""]
 	Line[106000 154000 115000 154000 1000 2000 ""]
 	Line[188000 123000 188000 124000 1000 2000 ""]
 	Line[188000 124000 189000 124000 1000 2000 ""]
@@ -1392,6 +1413,7 @@ Layer(2 "component")
 	Line[185000 47000 216000 16000 1000 2000 ""]
 	Line[216000 16000 224000 16000 1000 2000 ""]
 	Line[224000 16000 226000 14000 1000 2000 ""]
+	Line[44000 137000 44000 168000 2500 2000 ""]
 	Text[10000 4000 0 99 "1" ""]
 	Polygon("clearpoly")
 	(
@@ -1431,11 +1453,11 @@ Layer(3 "outline")
 )
 Layer(4 "notes")
 (
-	Text[12000 45000 0 100 "ShieldOutline v1.0" ""]
+	Text[12000 75000 0 100 "http://creativecommons.org/licenses/by/3.0/" ""]
 	Text[12000 52000 0 100 "Copyright 2011 Jerry Dunmire" ""]
 	Text[12000 60000 0 100 "This work is licensed under a Creative Commons Attribution 3.0 Unported License." ""]
 	Text[12000 67000 0 100 "Derived from ShieldOutline v.0 by Eric T., Low Voltage Labs, " ""]
-	Text[12000 75000 0 100 "http://creativecommons.org/licenses/by/3.0/" ""]
+	Text[12000 45000 0 100 "ShieldOutline v1.0" ""]
 )
 Layer(5 "solder-side silk")
 (
@@ -1475,12 +1497,10 @@ Layer(6 "component-side silk")
 )
 NetList()
 (
-	Net("+3.3V" "(unknown)")
-	(
-		Connect("J4-2")
-	)
 	Net("+5V" "(unknown)")
 	(
+		Connect("C4-2")
+		Connect("C5-1")
 		Connect("D1-2")
 		Connect("J4-3")
 		Connect("R2-2")
@@ -1493,6 +1513,8 @@ NetList()
 	(
 		Connect("C2-2")
 		Connect("C3-1")
+		Connect("C4-1")
+		Connect("C5-2")
 		Connect("D2-1")
 		Connect("J4-4")
 		Connect("J4-5")
@@ -1630,41 +1652,45 @@ NetList()
 	)
 	Net("unnamed_net30" "(unknown)")
 	(
-		Connect("J4-6")
+		Connect("J4-2")
 	)
 	Net("unnamed_net31" "(unknown)")
 	(
-		Connect("J4-1")
+		Connect("J4-6")
 	)
 	Net("unnamed_net32" "(unknown)")
 	(
-		Connect("J3-2")
+		Connect("J4-1")
 	)
 	Net("unnamed_net33" "(unknown)")
 	(
-		Connect("J3-4")
+		Connect("J3-2")
 	)
 	Net("unnamed_net34" "(unknown)")
 	(
-		Connect("J3-6")
+		Connect("J3-4")
 	)
 	Net("unnamed_net35" "(unknown)")
 	(
-		Connect("J3-8")
+		Connect("J3-6")
 	)
 	Net("unnamed_net36" "(unknown)")
 	(
-		Connect("J3-1")
+		Connect("J3-8")
 	)
 	Net("unnamed_net37" "(unknown)")
 	(
-		Connect("J3-3")
+		Connect("J3-1")
 	)
 	Net("unnamed_net38" "(unknown)")
 	(
-		Connect("J3-5")
+		Connect("J3-3")
 	)
 	Net("unnamed_net39" "(unknown)")
+	(
+		Connect("J3-5")
+	)
+	Net("unnamed_net40" "(unknown)")
 	(
 		Connect("J3-7")
 		Connect("S3-1")

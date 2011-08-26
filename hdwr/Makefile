@@ -29,6 +29,14 @@ lcMeter_top.bom2: $(ALLSCHEM)
 
 lcMeter_top.drc: $(ALLSCHEM)
 
+lcMeter_nui.pcb: lcMeter_nui.sch lc_osc.sch freq_buf.sch
+
+lcMeter_nui.bom: lcMeter_nui.sch lc_osc.sch freq_buf.sch
+
+lcMeter_nui.bom2: lcMeter_nui.sch lc_osc.sch freq_buf.sch
+
+lcMeter_nui.drc: lcMeter_nui.sch lc_osc.sch freq_buf.sch
+
 %.bom: %.sch attribs
 	gnetlist -g bom -o $@ $<
 

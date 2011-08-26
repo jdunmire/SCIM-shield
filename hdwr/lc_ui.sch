@@ -119,7 +119,7 @@ C 48700 46300 1 0 0 capacitor-1.sym
 T 48900 47000 5 10 0 0 0 0 1
 device=CAPACITOR
 T 48900 46800 5 10 1 1 0 0 1
-refdes=C4
+refdes=C9
 T 48900 47200 5 10 0 0 0 0 1
 symversion=0.1
 T 49200 46200 5 10 1 1 0 0 1
@@ -132,7 +132,7 @@ C 54200 48500 1 90 0 capacitor-1.sym
 T 53500 48700 5 10 0 0 90 0 1
 device=CAPACITOR
 T 53600 49200 5 10 1 1 180 6 1
-refdes=C5
+refdes=C6
 T 53300 48700 5 10 0 0 90 0 1
 symversion=0.1
 T 53600 48700 5 10 1 1 0 0 1
@@ -243,7 +243,7 @@ C 42200 43500 1 90 0 capacitor-1.sym
 T 41500 43700 5 10 0 0 90 0 1
 device=CAPACITOR
 T 41700 44100 5 10 1 1 180 0 1
-refdes=C6
+refdes=C8
 T 41300 43700 5 10 0 0 90 0 1
 symversion=0.1
 T 41300 43700 5 10 1 1 0 0 1
