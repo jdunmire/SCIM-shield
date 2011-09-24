@@ -193,7 +193,3 @@ Fri 22 Jul 2011 08:46:24 PM PDT
       the 'max' current that the LED can handle, or if it is the max
       minimum-voltage required to fully light the LED. If the later then
       the problem would be the 4.75/0.9 case.
-
-Mon 19 Sep 2011 02:20:50 PM PDT
-    - Changed to speaker terminals and re-routed the board
-    - TODO: solder mask is not right for the speaker terminal pads.

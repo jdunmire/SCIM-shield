@@ -238,6 +238,13 @@ Sat 20 Aug 2011 05:09:18 PM PDT
 
 
 Sun 21 Aug 2011 10:35:48 PM PDT
-    - TODO larger keep outs on switches, BNC, and 1000pF cap
-    - TODO add bypass capacitor
+    - DONE larger keep outs on switches, BNC, and 1000pF cap
+    - DONE add bypass capacitor
 
+Mon 19 Sep 2011 02:20:50 PM PDT
+    - Changed to speaker terminals and re-routed the board
+    - DONE: solder mask is not right for the speaker terminal pads.
+
+Fri 23 Sep 2011 07:26:28 PM PDT
+    - Replace speaker terminal footprint on pcb to fix solder mask.
+    - Layout is complete and passes DRC
