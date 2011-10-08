@@ -248,3 +248,20 @@ Mon 19 Sep 2011 02:20:50 PM PDT
 Fri 23 Sep 2011 07:26:28 PM PDT
     - Replace speaker terminal footprint on pcb to fix solder mask.
     - Layout is complete and passes DRC
+
+Sat 08 Oct 2011 10:52:08 AM PDT
+    - Board is 2.7x2.1 inches, 5.67 in^2
+    - Drill report shows 94 holes, 11 different sizes
+
+    batchpcb: $14.175 + $10 + shipping
+    Advanced Circuits(www.my4pcb.com): 2 boards, 3day turn: $149.42 + shipping
+    AP Circuits: 2 boards, $79.80 + $28 shipping, 3 day turn
+    Custompcb.com (Silver Circuits):
+       PCB Prototype: 4 boards, $72 + $15.5 shipping, 5 day turn, 2 day shipping
+       PCB Producion: 18 min., $134, with shipping.
+    UltimatePCB.com: 2 boards, $70.27 + shipping
+    PCBExpress: 2 boards, $109 + shipping
+    RushPCB:
+       Std: 5 boards, $254 + shipping
+       New customer: 3 boards, $30, + shipping, 5 day turn
+
