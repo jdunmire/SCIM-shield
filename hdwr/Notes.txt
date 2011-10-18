@@ -265,3 +265,10 @@ Sat 08 Oct 2011 10:52:08 AM PDT
        Std: 5 boards, $254 + shipping
        New customer: 3 boards, $30, + shipping, 5 day turn
 
+
+Tue 18 Oct 2011 03:51:26 PM PDT
+    - J3 is mislocated by 0.04. Pins should be at 0.9, 1.0, 1.1, etc.
+      and they are at 0.94, 1.04, 1.14...
+
+Tue 18 Oct 2011 03:57:02 PM PDT
+    - Fixed on lcMeter_nui.pcb and the template
