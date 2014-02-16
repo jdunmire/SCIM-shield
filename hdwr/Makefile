@@ -5,6 +5,7 @@
 # *.prj - gsch2pcb project file
 # *.pcb - pcb file
 #
+# 
 #
 PROJNAME=lcMeter
 TOPSCHEM=$(PROJNAME)_top.sch
@@ -36,6 +37,9 @@ lcMeter_nui.bom: lcMeter_nui.sch lc_osc.sch freq_buf.sch
 lcMeter_nui.bom2: lcMeter_nui.sch lc_osc.sch freq_buf.sch
 
 lcMeter_nui.drc: lcMeter_nui.sch lc_osc.sch freq_buf.sch
+
+lcMeter_nui.zip: lcMeter_nui.GTL lcMeter_nui.GBL lcMeter_nui.GTS lcMeter_nui.GBS lcMeter_nui.GTO lcMeter_nui.GKO lcMeter_nui.XLN
+	zip $@ $^
 
 %.bom: %.sch attribs
 	gnetlist -g bom -o $@ $<
@@ -71,6 +75,45 @@ lcMeter_nui.drc: lcMeter_nui.sch lc_osc.sch freq_buf.sch
 	# Set X-axis to log when viewing frequencies.
 	#
 
+# gerber files
+%.bottomsilk.gbr %.top.gbr %.bottom.gbr \
+    %.topmask.gbr %.bottommask.gbr %.topsilk.gbr \
+    %.ground.gbr %.power.gbr \
+    %.outline.gbr %.plated-drill.cnc: %.pcb
+	pcb -x gerber $<
+
+# Gerber file names for fab houses
+# Specifically for OSH Park (http://oshpark.com/guidelines)
+%.GTL: %.top.gbr
+	cp $< $@
+
+%.GBL: %.bottom.gbr
+	cp $< $@
+
+%.GTS: %.topmask.gbr
+	cp $< $@
+
+%.GBS: %.bottommask.gbr
+	cp $< $@
+
+%.GTO: %.topsilk.gbr
+	cp $< $@
+
+%.GBO: %.bottomsilk.gbr
+	cp $< $@
+
+%.GKO: %.outline.gbr
+	cp $< $@
+
+%.G2L: %.ground.gbr
+	cp $< $@
+
+%.G3L: %.power.gbr
+	cp $< $@
+
+%.XLN: %.plated-drill.cnc
+	cp $< $@
+
 clean:
 	$(RM) *.log *.raw
 	$(RM) *.ckt
@@ -79,6 +122,8 @@ clean:
 	$(RM) *.new.pcb
 	$(RM) *.drc
 	$(RM) *.bom *.bom2
+	$(RM) *.gbr *.cnc
+	$(RM) *.G* *.XLN *.png
 
 
 distclean: clean
