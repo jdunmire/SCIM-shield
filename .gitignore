@@ -1,3 +1,17 @@
 *.swp
 *.pcb-
 *.od*#
+*.zip
+# Gerber files
+*.gbr
+*.cnc
+*.GTL
+*.GBL
+*.GTS
+*.GBS
+*.GTO
+*.GBO
+*.GKO
+*.G2L
+*.G3L
+*.XLN
