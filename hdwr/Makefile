@@ -15,7 +15,7 @@ ALLSCHEM=$(TOPSCHEM) $(OTHERSCHEM)
 
 check: $(addsuffix .drc,$(basename $(ALLSCHEM)))
 
-all: simulate
+all: check simulate lcMeter_nui.zip
 
 simulate: spice_capMeter.raw spice_inductMeter.raw spice_freqMeter.raw
 

@@ -272,3 +272,12 @@ Tue 18 Oct 2011 03:51:26 PM PDT
 
 Tue 18 Oct 2011 03:57:02 PM PDT
     - Fixed on lcMeter_nui.pcb and the template
+
+##Sat 15 Feb 2014 10:22:55 PM PST
+    - Makefile can now generate gerber and zip files for fab.
+    - Makefile all target now runs the schematic design rule checker,
+      spice simulation, and generates the pcb fab file.
+    - Quote from Seeedstudios is $20.90 (plus shipping I think) for 5
+      boards
+    - Quote from OSH Park (replaces BatchPCB) is $28.35 for 3 boards.
+      (also plus shipping)
