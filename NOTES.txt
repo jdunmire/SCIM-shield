@@ -193,3 +193,12 @@ Fri 22 Jul 2011 08:46:24 PM PDT
       the 'max' current that the LED can handle, or if it is the max
       minimum-voltage required to fully light the LED. If the later then
       the problem would be the 4.75/0.9 case.
+
+##Sat 15 Feb 2014 04:13:27 PM PST
+    - Changed from mecurial (hg) to git because I am using git on a
+      daily basis.
+        - used git-hg from https://github.com/offbytwo/git-hg
+        - work was done on sony-SVE14A1HFXB
+        - git-hg was removed after use
+    - The mercurial repository on `raven.local.dunmire.org` need to be
+      marked as obsolete.
