@@ -1,4 +1,33 @@
-Mon 16 May 2011 07:44:09 PM PDT
+# lcMeter - an Arduino Shield for measuring L,C, and F
+
+Now using git, but a remote repository has not been setup (as of
+2014/02/15)
+
+See the hdwr/Notes.txt file for more design notes. Also check the commit
+history.
+
+The `scrapbook/` directory has hyperlinks related to this project.
+It requires the Firefox Scrapbook plugin.
+
+There is also an associated project wiki in the `wiki/` directory. It is
+driven by hatta.py (see the first couple of notes below usage info).
+
+_WARNING_: Hatta Wiki requires mercurial, so the wiki is broken now that
+           the repository has been moved to `git`. The pages can be
+           displayed but `Edit` and `History` do not work.
+
+The design evolved to have an LCD display, but that was then dropped
+while trying to layout the PCB due to space problems. Only the NUI (No
+User Interface) version has been routed.
+
+# Project Setup
+On Ubuntu the design tools can be installed with this command:
+
+    $ sudo apt-get install geda geda-doc geda-examples geda-utils gerbv ngspice ngspice-doc pcb make make-doc
+
+The _-doc_ packages are optional.
+
+##Mon 16 May 2011 07:44:09 PM PDT
   New project: Design and build a Arduino based LC Meter
     - use gEDA tools
     - use mercurial for the DRCS
@@ -14,13 +43,13 @@ Mon 16 May 2011 07:44:09 PM PDT
     hg clone ssh://jerry@raven//srv/hg/lcMeter
 
 
-Tue 17 May 2011 03:44:17 PM PDT
+##Tue 17 May 2011 03:44:17 PM PDT
     - Start the wiki by running 'hatta.py'
     - Wiki will be at http://localhost:8080/
     - The hatta.conf file is set to constrain access to localhost.
 
 
-Sun 26 Jun 2011 02:12:41 PM PDT
+##Sun 26 Jun 2011 02:12:41 PM PDT
     TODO:
       - finish UI schematic - DONE
       - add power connections to schematics - DONE
@@ -31,21 +60,21 @@ Sun 26 Jun 2011 02:12:41 PM PDT
          - Switches
 
 
-Sun 26 Jun 2011 05:13:12 PM PDT
+##Sun 26 Jun 2011 05:13:12 PM PDT
     - DONE: Rework Uno connector symbols- confusing pin label/number positions
       when symbol is inverted/rotated
 
-Sun 26 Jun 2011 09:59:22 PM PDT
+##Sun 26 Jun 2011 09:59:22 PM PDT
     - DONE: Calculate pull-up resistors for level shifter per 2.3.5 of
       AN10418.
 
         10K will work for bus capacitance up to 200pF, even with 3.3v
         levels.
 
-Mon 27 Jun 2011 09:51:57 PM PDT
+##Mon 27 Jun 2011 09:51:57 PM PDT
     - Schematics are complete. Committing.
 
-Wed 29 Jun 2011 11:18:40 PM PDT
+##Wed 29 Jun 2011 11:18:40 PM PDT
     - Running gnetlist -g drc2 against all of the schematics at once
       generates a bunch of duplicate refdes errors, but I thought the
       reference designators were necessary to make the connection
@@ -60,10 +89,10 @@ Wed 29 Jun 2011 11:18:40 PM PDT
       patch pending that would eliminate the error.
 
 
-Sat 02 Jul 2011 08:34:37 AM PDT
+##Sat 02 Jul 2011 08:34:37 AM PDT
     - Installed gspiceui to check it out
 
-Sun 03 Jul 2011 09:26:46 PM PDT
+##Sun 03 Jul 2011 09:26:46 PM PDT
     - Found that gspiceui is part of the problem.
       When the + input to the LM393 was a named net, gspiceui would drop
       it LM393 from the simulation list created by gspiceui.
@@ -76,7 +105,7 @@ Sun 03 Jul 2011 09:26:46 PM PDT
       frequency. Otherwise I got error messages about the time interval
       being two small.
 
-Sun 03 Jul 2011 11:11:52 PM PDT
+##Sun 03 Jul 2011 11:11:52 PM PDT
     - The spice simulations are showing a little oscillation on the +5v
       levels of the osc output and even larger oscillations on the
       output of the frequency buffer. Adding 10pf to the output of each
@@ -104,13 +133,13 @@ Sun 03 Jul 2011 11:11:52 PM PDT
       - Clarify the Lx/Cx labels - DONE (switched them)
 
 
-Mon 04 Jul 2011 10:02:58 AM PDT
+##Mon 04 Jul 2011 10:02:58 AM PDT
     - Found that adding 10pf to the output of the freq_osc would
       eliminate the HF oscillation at the top of the output waveform.
       1pf would cause overshoot, 100pf would cause noticable rounding of
       the corners of the waveform.
 
-Mon 04 Jul 2011 12:42:18 PM PDT
+##Mon 04 Jul 2011 12:42:18 PM PDT
     - Web search provided more information on the "doAnalyses: TRAN:
       Timestep too small" error message. I found I could fix the problem
       by adding a UIC (use initial conditions) to the .TRAN directive.
@@ -118,7 +147,7 @@ Mon 04 Jul 2011 12:42:18 PM PDT
       is the pullup listed for I/O pins in the Atmega data sheet.
 
 
-Mon 04 Jul 2011 02:21:53 PM PDT
+##Mon 04 Jul 2011 02:21:53 PM PDT
     - With R7 at 10k and the pull-up resistor at 50k, there is roll-off on
       the rising edge.
     - Added a pull-up resistor to the freq_buf, R10. 3.3K. Also changed
@@ -130,7 +159,7 @@ Mon 04 Jul 2011 02:21:53 PM PDT
       within the 20mA spec for the LM393.
 
 
-Sun 17 Jul 2011 09:02:07 AM PDT
+##Sun 17 Jul 2011 09:02:07 AM PDT
     - After spending quite a bit of time, I am unable to get a ngspice
       simulation to work with the frequence measurement configuration
       due to the clipping diodes. Without the diodes an AC analysis can
@@ -140,7 +169,7 @@ Sun 17 Jul 2011 09:02:07 AM PDT
       frequency model.
 
 
-Sun 17 Jul 2011 10:23:28 AM PDT
+##Sun 17 Jul 2011 10:23:28 AM PDT
     - Spice simulation of the frequency meter shows that the 3db point
       is at about 9.7MHz. This 'cut-off' frequency is primarily due to
       the 10pf input load. Even so, the effective frequency range may be
@@ -149,13 +178,13 @@ Sun 17 Jul 2011 10:23:28 AM PDT
       for counting.
 
 
-Sun 17 Jul 2011 10:37:11 AM PDT
+##Sun 17 Jul 2011 10:37:11 AM PDT
     - Changed R7 back to 10K because I found got the .TRANS simulations
       to work using the UIC (Use Initial Contitions) flag.
     - Recalculated the cut-off frequency which is now about 26MHz
 
 
-Sun 17 Jul 2011 10:18:28 PM PDT
+##Sun 17 Jul 2011 10:18:28 PM PDT
     - Found the problem with the diode modeling- the capacitance value
       in the model did not have a units symbol. So it was 30 farads(!)
       not 30pF.
@@ -169,7 +198,7 @@ Sun 17 Jul 2011 10:18:28 PM PDT
     TODO: select a diode and put in a better model.
     Diodes Inc has a good selection of spice models.
 
-Mon 18 Jul 2011 09:33:26 PM PDT
+##Mon 18 Jul 2011 09:33:26 PM PDT
     - Setup attribs file for BOM/BOM2
     - now I can easily see which items need a footprint
     - for things like switches, I'm going to set the value to none or the vendor
@@ -181,7 +210,7 @@ Mon 18 Jul 2011 09:33:26 PM PDT
        Added to all resistors, 2011-07-22
 
 
-Fri 22 Jul 2011 08:46:24 PM PDT
+##Fri 22 Jul 2011 08:46:24 PM PDT
     - Current limiting resistor R11
       The spec for the LED back light is 3.0v, at 15mA (20mA max)
       The spec for the Atmel output pins is 0.9v max at 20mA
@@ -202,3 +231,7 @@ Fri 22 Jul 2011 08:46:24 PM PDT
         - git-hg was removed after use
     - The mercurial repository on `raven.local.dunmire.org` need to be
       marked as obsolete.
+
+##Sat 15 Feb 2014 04:27:00 PM PST
+    - Changed to _markdown_ formatting for this file
+
