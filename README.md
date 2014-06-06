@@ -4,6 +4,9 @@ This shield enables an Arduino to measure capacitance, inductance, and
 frequency. A display is not included, so the sketch will have to report
 the values over the serial port. 
 
+The [MeasureFCI](https://github.com/jdunmire/MeasureFCI) sketch works with
+this board.
+
 The concept is based on the
 [AVR LC Meter](http://www.kerrywong.com/2010/10/16/avr-lc-meter-with-frequency-measurement/)
 by [Kerry Wong](http://www.kerrywong.com/about/).
