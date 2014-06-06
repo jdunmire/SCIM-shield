@@ -235,3 +235,63 @@ The _-doc_ packages are optional.
 ##Sat 15 Feb 2014 04:27:00 PM PST
     - Changed to _markdown_ formatting for this file
 
+
+##Sat 24 May 2014 05:47:29 PM PDT
+    - Found that I had the wrong part on the first board, an AD711
+      (which is an OP AMP) rather than the LM339 comparator. With the
+      correct part the board works like a charm.
+    - Found two choices for Arduino frequency counter libraries: 
+    http://interface.khm.de/index.php/lab/experiments/arduino-frequency-counter-library/
+    and
+    https://www.pjrc.com/teensy/td_libs_FreqCount.html
+      The second is a bit more in the style of other sketches, but both
+      work. Note that neither return the frequency in Hz if the sample
+      window is not 1 second (1000 ms). They return the number of counts
+      detected in the specified window, so scale appropriately.
+
+
+##Sat 24 May 2014 06:15:56 PM PDT
+    - More research and I found this meter:
+      http://www.amqrp.org/kits/elsie/index.html
+      Not as automated as the reference design I was using (which used a
+      relay to switch modes) but the operation is probably close to the
+      way my design will work.
+
+
+##Sun 01 Jun 2014 05:41:15 PM PDT
+    - Thinking about how to publish
+       - LCFMeasure2 to githup
+          - need license and README.md
+
+       - rockingdlabs page on designing with geda using a Makefile.
+         Support for spice simulation and for submission to OSH Park
+
+       - rockingdlabs page on lcmeter
+       - also host on github
+          - actually it is lcmeter_nui (no user interface) because I
+            my original plans were to make a design with an LCD.
+            - can I include datasheets? found some projects that do.
+            https://github.com/spark/core/tree/master/Datasheets
+            https://github.com/centeye/ArduEye-Hardware-Design-Files/tree/master/Parts%20Datasheets
+            So maybe I can.
+            - spreadsheet BOM
+            - Need to prepare docs, extract from hatta wiki. Probably as a
+            page on rockingdlabs
+            - Improvements/Todo: 
+                - use DPDT switch for freq
+                - fix diode silkscreen
+                - relocate parts to clear UNO USB and power connectors
+
+            - .zip and many other files are ignored, but I may want to
+              publish them, at least on the documentation page
+            - Makefile driven design
+
+farads henries hertz
+measure
+shield
+Freq Cap Induct
+MeasureFCI
+
+##Sun 01 Jun 2014 11:08:00 PM PDT
+    - Need to fix diodes and test frequency measurement.
+    - Maybe add frequency scaling to MeasureFCI?
