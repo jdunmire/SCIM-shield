@@ -22,4 +22,9 @@ produces Gerber files for delivery to a PCB fabricator. Simply run `make
 all` in the `hdwr/` directory. See comments in the `Makefile` for more
 details.
 
-My development notes are spread throught the project.
+My development notes are spread throught the project. The project has
+been spread over several years because it has been a _spare-time_
+project. As of (June 2014) PCBs have been built, the first unit built
+and tested.
+
+__WARNING__: The silk-screen for the diodes is reversed.
