@@ -5,15 +5,16 @@ frequency. A display is not included, so the sketch will have to report
 the values over the serial port. 
 
 The concept is based on the
-[http://www.kerrywong.com/2010/10/16/avr-lc-meter-with-frequency-measurement/](AVR
-LC Meter) by [http://www.kerrywong.com/about/](Kerry Wong).
+[AVR LC Meter](http://www.kerrywong.com/2010/10/16/avr-lc-meter-with-frequency-measurement/)
+by [Kerry Wong](http://www.kerrywong.com/about/).
 
 The schematics and PCB layout were developed with the
-[http://www.geda-project.org/](gEDA) tools running
-on [http://www.ubuntu.com/](Ubuntu).
+[gEDA](http://www.geda-project.org/)
+tools running
+on [Ubuntu](http://www.ubuntu.com/).
 
 A Makefile in the hdwr/ directory runs a design rule check, runs a
-design simulation using [http://ngspice.sourceforge.net/](ngSpice), and
+design simulation using [ngSpice](http://ngspice.sourceforge.net/), and
 produces Gerber files for delivery to a PCB fabricator. Simply run `make
 all` in the `hdwr/` directory. See comments in the `Makefile` for more
 details.
